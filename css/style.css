@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    position:relative;
+}
+.nav-link:before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position:absolute;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.5s;
+}
+.nav-link:after{
+    content: '';
+    top: 0;
+    right: 0;
+    position:absolute;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.5s;
+}
+.nav-link:hover:before{
+    width: 50%;
+}
+.nav-link:hover:after{
+    width: 50%;
+}
+/* NAV */
+
+.navbar-brand img{
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+nav a{
+    color: grey;
+}
+
+
+.containerFluid{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+.navbar-nav .nav-item:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+/* BANNER */
+
+
+
+
+
+.inlineBanner{
+    display: flex;
+}
+.leftBlock div:nth-child(1) p{
+    font-size: 20px;
+}
+.leftBlock div:nth-child(1) p:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.leftBanner{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.interst{
+    margin-top: 50px;
+}
+.leftBlock .btnBlock button{
+    color: grey;
+    border:1px solid gainsboro;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 20px;
+}
+.leftBlock .btnBlock button:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    border:1px solid black;
+    color: white;
+    background-color: black;
+}
+
+
+/* rightBanner */
+
+
+.rightBanner{
+    width: 70%;
+    overflow: hidden;
+}
+.flexBlock{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.flexBlock button:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+    border-color: white;
+}
+.flexBlock button{
+    border:1px solid white;
+}
+
+
+/* one */
+.one{
+    overflow: hidden;
+    width: 100%;
+}
+.oneImg{
+    background: url('/img/Новая папка/banner1.png') center / cover;
+    transition: 0.3s;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.one div{
+    transition: 0.2s;
+}
+.oneImg:hover div{
+    margin-left: 70px;
+    transition: 0.5s;
+   
+
+}
+.oneImg:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  
+
+}
+
+.one button{
+    padding: 5px 20px;
+    background: none;
+    border-color: white;
+    color: white;
+    margin-top: 10px;
+}
+
+/* two */
+.two{
+    overflow: hidden;
+    width: 50%;
+}
+.twoImg{
+    background: url('/img/Новая папка/gen.png') center / cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    text-transform: uppercase;
+
+}
+
+.twoImg:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
+.two div{
+    transition: 0.2s;
+}
+.twoImg:hover div{
+    margin-left: 40px;
+    transition: 0.5s;
+
+
+}
+.two button{
+    padding: 5px 20px;
+    background: none;
+    border-color: white;
+    color: white;
+    margin-top: 10px;
+}
+
+/* three */
+.three{
+    overflow: hidden;
+    width: 50%;
+}
+.threeImg{
+    background: url('/img/Новая папка/Engineering.png') center / cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    transition:0.3s;
+    text-transform: uppercase;
+
+
+}
+
+.threeImg:hover{
+    transform: scale(1.1);
+    transition: 1s; 
+ 
+
+}
+
+
+.three button{
+    padding: 5px 20px;
+    background: none;
+    border-color: white;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.three div{
+    transition: 0.2s;
+}
+.threeImg:hover div{
+    margin-left: 30px;
+    transition: 0.5s;
+
+
+}
