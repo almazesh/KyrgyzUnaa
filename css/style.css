@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    position: relative;
 }
 
 .nav-link{
@@ -265,4 +266,67 @@ nav a{
     transition: 0.5s;
 
 
+}
+
+
+
+
+/* 
+    FOOOTER
+
+*/
+
+footer{
+    margin: 100px 0;
+}
+
+.centerFooter{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.foot ul {
+    display: flex;
+    list-style: none;
+}
+.foot ul li{
+    margin: 0 30px;
+}
+.foot ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot ol li{
+    list-style: none;
+}
+.foot ol li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+
+/* footer - Secfooter */
+
+
+.secFoot{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.secFoot ul{
+    list-style: none;
+}
+.secFoot ol {
+    display: flex;
+}
+.secFoot ol li{
+    margin: 0 10px;
+    list-style: none;
+}
+.secFoot ol li a{
+    color: rgba(0,0,0,.8) ;
 }
