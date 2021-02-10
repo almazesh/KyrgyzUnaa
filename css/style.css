@@ -12,33 +12,29 @@ html{
 .nav-link{
     text-decoration: none;
     position:relative;
+   
+}
+.nav-link:hover{
+    background-color: black;
+    transition-delay: .3s;
+    transition-duration: 0.3s;
+    color: white !important;
 }
 .nav-link:before{
     content: '';
-    bottom: 0;
+    top: 0;
     left: 0;
     position:absolute;
     width: 0%;
     height: 1px;
     background-color: black;
-    transition: 0.5s;
+    transition: 0.3s;
 }
-.nav-link:after{
-    content: '';
-    top: 0;
-    right: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: black;
-    transition: 0.5s;
-}
+
 .nav-link:hover:before{
-    width: 50%;
+    width: 100%;
 }
-.nav-link:hover:after{
-    width: 50%;
-}
+
 /* NAV */
 
 .navbar-brand img{
@@ -85,10 +81,10 @@ nav a{
     display: flex;
 }
 .leftBlock div:nth-child(1) p{
-    font-size: 20px;
+    font-size: 23px;
 }
 .leftBlock div:nth-child(1) p:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 .leftBanner{
@@ -107,6 +103,7 @@ nav a{
     padding: 10px 20px;
     background: none;
     border-radius: 20px;
+    font-size: 15px;
 }
 .leftBlock .btnBlock button:hover{
     transform: scale(1.2);
@@ -147,7 +144,7 @@ nav a{
 }
 .oneImg{
     background: url('/img/Новая папка/banner1.png') center / cover;
-    transition: 0.3s;
+    transition: 1s;
     width: 100%;
     height: 280px;
     display: flex;
@@ -159,11 +156,11 @@ nav a{
 }
 
 .one div{
-    transition: 0.2s;
+    transition: 1s;
 }
 .oneImg:hover div{
     margin-left: 70px;
-    transition: 0.5s;
+    transition: 1s;
    
 
 }
@@ -193,7 +190,7 @@ nav a{
     height: 250px;
     display: flex;
     flex-direction: column;
-    transition: 0.3s;
+    transition: 1s;
     justify-content: center;
     color: white;
     padding-left: 20px;
@@ -207,11 +204,11 @@ nav a{
     
 }
 .two div{
-    transition: 0.2s;
+    transition: 1s;
 }
 .twoImg:hover div{
     margin-left: 40px;
-    transition: 0.5s;
+    transition: 1s;
 
 
 }
@@ -237,7 +234,7 @@ nav a{
     justify-content: center;
     color: white;
     padding-left: 20px;
-    transition:0.3s;
+    transition:1s;
     text-transform: uppercase;
 
 
@@ -261,11 +258,11 @@ nav a{
 
 
 .three div{
-    transition: 0.2s;
+    transition: 1s;
 }
 .threeImg:hover div{
     margin-left: 30px;
-    transition: 0.5s;
+    transition:1s;
 
 
 }
