@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.active{    
+  
+    color: red !important;
+}
+.nav-link{
+    text-decoration: none;
+    position:relative;
+}
+.nav-link:hover{
+    background-color: black;
+    transition-delay: .3s;
+    transition-duration: 0.3s;
+    color: white !important;
+}
+.nav-link:before{
+    content: '';
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.nav-link:hover:before{
+    width: 100%;
+}
+
+/* NAV */
+
+.navbar-brand img{
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+nav a{
+    color: grey;
+}
+
+
+.containerFluid{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+
+
+
+/* MAIN */
+
+.aboutBanner{
+    height:350px;
+    background: whitesmoke;
+}
+.centerBanner{
+    width: 90%;
+    margin: 0 auto;
+}
+.aboutCompany{
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+}
+.mainBanner{
+    display: flex;
+    justify-content: space-around;
+
+}
+.towns{
+    width: 75%;
+    margin-top: 65px;
+}
+.towns img{
+    width: 100%;
+}
+
+
+
+/* Content */
+
+
+
+.centerText{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.paragr{
+    margin: 100px 0;
+    width: 75%;
+}
+.paragr h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.mission{
+    text-align: center;
+    padding:50px 0;
+}
+.mission h1{
+    text-transform: uppercase;
+}
+
+.bus{
+    text-align: center;
+}
+
+
+
+/* Goal */
+.centerGoal{
+    width: 90%;
+    margin: auto;
+    margin-top:100px ;
+}
+.inlineGoal{
+    display: flex;
+    justify-content: space-around;
+}
+.imgGoal{
+    width: 50%;
+}
+.imgGoal img{
+    width: 100%;
+}
+.textGoal{
+    width: 40%;
+    margin-top: 100px;
+}
+
+/* General */
+
+.centerGeneral{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+.generalText{
+    text-align: center;
+}
+.generalText ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.generalText ul li{
+    margin: 0 30px;
+}
+.generalImg{
+    width: 75%;
+    margin: auto;
+    display: flex;
+}
+.generalImg img{
+    width: 100%;
+}
+
+/* 
+    FOOOTER
+
+*/
+
+footer{
+    margin: 50px 0;
+}
+
+.centerFooter{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.foot ul {
+    display: flex;
+    list-style: none;
+}
+.foot ul li{
+    margin: 0 30px;
+}
+.foot ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot ol li{
+    list-style: none;
+}
+.foot ol li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+
+/* footer - Secfooter */
+
+
+.secFoot{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.secFoot ul{
+    list-style: none;
+}
+.secFoot ol {
+    display: flex;
+}
+.secFoot ol li{
+    margin: 0 10px;
+    list-style: none;
+}
+.secFoot ol li a{
+    color: rgba(0,0,0,.8) ;
+}
+
+.secFoot ol li a:hover{
+    color: red ;
+}
+

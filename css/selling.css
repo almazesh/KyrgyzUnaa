@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.active{    
+  
+    color: red !important;
+}
+.nav-link{
+    text-decoration: none;
+    position:relative;
+}
+.nav-link:hover{
+    background-color: black;
+    transition-delay: .3s;
+    transition-duration: 0.3s;
+    color: white !important;
+}
+.nav-link:before{
+    content: '';
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.nav-link:hover:before{
+    width: 100%;
+}
+
+/* NAV */
+
+.navbar-brand img{
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+nav a{
+    color: grey;
+}
+
+
+.containerFluid{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+
+
+
+/* MAIN */
+
+.aboutBanner{
+    height:350px;
+    background: whitesmoke;
+}
+.centerBanner{
+    width: 90%;
+    margin: 0 auto;
+}
+.aboutCompany{
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    letter-spacing: 20px;
+}
+.mainBanner{
+    display: flex;
+    justify-content: space-around;
+
+}
+.towns{
+    width: 45%;
+    margin-top: 35px;
+}
+.towns img{
+    width: 100%;
+}
+.cards{
+    position: relative;
+    list-style: image-set() inside outside;
+    list-style: 50px;
+    color: black;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: name rotate 5s infinite linear;
+    transform: scale(1.1);
+}
+
+
+
+
+/* Content client */
+
+
+
+.clientsCenter{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+.buyProduct{
+    margin-top: 100px;
+}
+
+.clientsCenter ul{
+    list-style: none;
+    color: grey;
+    margin-top: 50px;
+}
+
+.clientsCenter h4{
+    margin-top: 50px;
+}
+/* 
+    FOOOTER
+
+*/
+
+footer{
+    margin: 100px 0;
+}
+
+.centerFooter{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.foot ul {
+    display: flex;
+    list-style: none;
+}
+.foot ul li{
+    margin: 0 30px;
+}
+.foot ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot ol li{
+    list-style: none;
+}
+.foot ol li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+
+/* footer - Secfooter */
+
+
+.secFoot{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.secFoot ul{
+    list-style: none;
+}
+.secFoot ol {
+    display: flex;
+}
+.secFoot ol li{
+    margin: 0 10px;
+    list-style: none;
+}
+.secFoot ol li a{
+    color: rgba(0,0,0,.8) ;
+}
+
+.secFoot ol li a:hover{
+    color: red ;
+}
+

@@ -18,32 +18,27 @@ html{
     text-decoration: none;
     position:relative;
 }
+.nav-link:hover{
+    background-color: black;
+    transition-delay: .3s;
+    transition-duration: 0.3s;
+    color: white !important;
+}
 .nav-link:before{
     content: '';
-    bottom: 0;
+    top: 0;
     left: 0;
     position:absolute;
     width: 0%;
     height: 1px;
     background-color: black;
-    transition: 0.5s;
+    transition: 0.3s;
 }
-.nav-link:after{
-    content: '';
-    top: 0;
-    right: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: black;
-    transition: 0.5s;
-}
+
 .nav-link:hover:before{
-    width: 50%;
+    width: 100%;
 }
-.nav-link:hover:after{
-    width: 50%;
-}
+
 /* NAV */
 
 .navbar-brand img{
@@ -73,43 +68,18 @@ nav a{
 .navbar-nav .nav-item{
     margin: 0 10px;
 }
-.navbar-nav .nav-item:hover{
-    transform: scale(1.3);
-}
+
 
 
 /* Main */
 
 .centerCard{
-    width: 80%;
+    width:95%;
     margin:0 auto;
 }
 .inlineCard{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-}
-.cards{
-    text-align: center;
-    margin: 20px 0;
-    border:1px solid gainsboro;
-    padding: 20px;
-    border-radius: 4px;
-
-
-}
-.cards:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-    box-shadow: 0 2px 2px gainsboro;
-}
-
-.card-header{
-    background: none !important;
-}
-.card-header img{
-    width: 200px;
-}
-.card-footer{
-    background: none !important;
+    overflow: hidden;
 }

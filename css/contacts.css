@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.active{    
+  
+    color: red !important;
+}
+.nav-link{
+    text-decoration: none;
+    position:relative;
+}
+.nav-link:hover{
+    background-color: black;
+    transition-delay: .3s;
+    transition-duration: 0.3s;
+    color: white !important;
+}
+.nav-link:before{
+    content: '';
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.nav-link:hover:before{
+    width: 100%;
+}
+
+/* NAV */
+
+.navbar-brand img{
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+nav a{
+    color: grey;
+}
+
+
+.containerFluid{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+
+
+
+/* MAIN */
+
+.aboutBanner{
+    height:350px;
+    background: whitesmoke;
+}
+.centerBanner{
+    width: 90%;
+    margin: 0 auto;
+}
+.aboutCompany{
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    letter-spacing: 20px;
+}
+.mainBanner{
+    display: flex;
+    justify-content: space-around;
+
+}
+.towns{
+    width: 45%;
+    margin-top: 35px;
+}
+.towns img{
+    width: 100%;
+}
+
+
+
+
+/* Content contacts */
+
+
+
+.backWhite{
+    background-color: white;
+ 
+}
+.centerContacts{
+    margin-top: 20px;
+    padding: 100px;
+    text-align: center;
+}
+
+
+ 
+/* FORMSS */
+
+
+
+.containers {
+    display: flex;
+    height: 100vh;
+  }
+  .hidd{
+    overflow: hidden;
+
+  }
+  .left {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+  }
+  
+  .right {
+    flex: 1;
+    background-color: black;
+    transition: 1s;
+    background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ 
+  
+  .header > h2 {
+    margin: 0;
+    color: #4f46a5;
+  }
+  
+  .header > h4 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,.4);
+  }
+  
+  .form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form > p {
+    text-align: right;
+  }
+  
+  .form > p > a {
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .form-field {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+  }
+  
+  .form-field:focus {
+    border-color: #0f7ef1;
+  }
+  
+  .form > button {
+    padding: 12px 10px;
+    border: 0;
+    background: linear-gradient(to right, #de48b5 0%,#0097ff 100%); 
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .animation {
+    animation-name: move;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+  }
+  
+  .a1 {
+    animation-delay: 2s;
+  }
+  
+  .a2 {
+    animation-delay: 2.1s;
+  }
+  
+  .a3 {
+    animation-delay: 2.2s;
+  }
+  
+  .a4 {
+    animation-delay: 2.3s;
+  }
+  
+  .a5 {
+    animation-delay: 2.4s;
+  }
+  
+  .a6 {
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes move {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-40px);
+    }
+  
+    100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes left {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      padding: 20px 40px;
+      width: 440px;
+    }
+  }
+
+
+  /* MAPS */
+
+
+
+  .mapsCenter{
+    width: 80%;
+    margin:  auto;
+    margin-top: 150px;
+  }
+  .mapsInline{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .leftSide{
+    display: flex;
+    align-items: center;
+  }
+  .leftSide ul li{
+    margin: 10px 0;
+  }
+
+
+
+
+
+/* 
+    FOOOTER
+
+*/
+
+footer{
+    margin: 100px 0;
+}
+
+.centerFooter{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.foot ul {
+    display: flex;
+    list-style: none;
+}
+.foot ul li{
+    margin: 0 30px;
+}
+.foot ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot ol li{
+    list-style: none;
+}
+.foot ol li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8) ;
+}
+
+/* footer - Secfooter */
+
+
+.secFoot{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.secFoot ul{
+    list-style: none;
+}
+.secFoot ol {
+    display: flex;
+}
+.secFoot ol li{
+    margin: 0 10px;
+    list-style: none;
+}
+.secFoot ol li a{
+    color: rgba(0,0,0,.8) ;
+}
+
+.secFoot ol li a:hover{
+    color: red ;
+}
+
