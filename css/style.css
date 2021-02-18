@@ -1,10 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Brodyaga */
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap');
+
+
+/* Body */
+
+
+
+/* My Styles */
+main{
+    font-family: 'Brygada 1918', serif !important;
+}
+.inlineBanner{
+    display: block !important;
+}
+
+header{
+    position: relative;
+    z-index: 10;
+}
+
+.preloader{
+    overflow: hidden !important;
+    background: url('../img/Новая\ папка/about.jpg') center / cover fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.preloader::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+.leftBanner{
+    width: 100% !important;
+}
+
+.leftBanner p{
+    position: relative;
+    z-index: 10;
+    font-size: 50px;
+    padding: 2rem;
+    text-align: center !important;
+    color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,.3);
+}
+
+.rightBanner{
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+.oneImg, .twoImg, .threeImg{
+    height: 400px !important;
+    padding: 2rem !important;
+}
+
+.oneImg h4, .twoImg h4, .threeImg h4{
+    font-size: 45px !important;
+}
+
+.oneImg{
+    text-align: center !important;
+}
+.oneImg:hover div{
+    margin-left: 0px !important;
+    margin-top: 30px !important;
+}
+
+.threeImg{
+    text-align: right !important;
+}
+
+.threeImg:hover div{
+    margin-right: 20px !important;
+}
+
+
+/* About us main */
+.about{
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+}
+.aboutUsMain{
+    width: 100%;
+    padding: 4rem 0;
+    color: #fff;
+    position: relative;
+    background: url('../img/about-main.jpg') center / cover fixed;
+    transition: 1s;
+}
+
+.aboutUsMain::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+
+.aboutUsMain:hover{
+    transform: scale(1.1);
+}
+
+.aboutUsMain p, .aboutUsMain div{
+    position: relative;
+    z-index: 2;
+}
+
+.aboutUsMain .title h1{
+    font-size: 60px !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.aboutUsMain p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.aboutUsMain button{
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid #fff;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    transition: .3s;
+}
+
+.aboutUsMain button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+/* Header */
+header{
+    position: relative;
+}
+header nav{
+    position: absolute !important;
+    width: 100% !important;
+    background-color: rgba(0,0,0,0);
+}
+
+header nav li a{
+    color: #fff !important;
+}
+
+
+
+
+/* Footer */
+
+.secFoot ol li a{
+    font-size: 1.5rem;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!! */
+
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
-  
+    position: relative;
+}
+.active{
+    color: gold !important;
 }
 html{
     scroll-behavior: smooth;
@@ -15,10 +192,10 @@ html{
    
 }
 .nav-link:hover{
-    background-color: black;
+    background-color: white;
     transition-delay: .3s;
     transition-duration: 0.3s;
-    color: white !important;
+    color: black !important;
 }
 .nav-link:before{
     content: '';
@@ -27,7 +204,7 @@ html{
     position:absolute;
     width: 0%;
     height: 1px;
-    background-color: black;
+    background-color: white;
     transition: 0.3s;
 }
 
@@ -78,14 +255,17 @@ nav a{
     display: flex;
 }
 .leftBlock div:nth-child(1) p{
-    font-size: 23px;
+    /* font-size: 1.8rem; */
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
 }
 .leftBlock div:nth-child(1) p:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
 .leftBanner{
-    width:30%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +320,7 @@ nav a{
     width: 100%;
 }
 .oneImg{
-    background: url('/img/Новая папка/banner1.png') center / cover;
+    background: url('/img/Новая папка/christopher-burns-8KfCR12oeUM-unsplash.jpg') center / cover;
     transition: 1s;
     width: 100%;
     height: 280px;
@@ -150,6 +330,11 @@ nav a{
     color: white;
     padding-left: 20px;
     text-transform: uppercase;
+    position: relative;
+}
+.oneImg div, .twoImg div, .threeImg div{
+    position: relative;
+    z-index: 5;
 }
 
 .one div{
@@ -157,15 +342,28 @@ nav a{
 }
 .oneImg:hover div{
     margin-left: 70px;
-    transition: 1s;
+    transition: .5s;
    
 
 }
 .oneImg:hover{
     transform: scale(1.1);
     transition: 1s;
-  
+}
 
+.oneImg::before, .twoImg::before, .threeImg::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.3);
+}
+
+.oneImg h4, .twoImg h4, .threeImg h4{
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.9) !important;
 }
 
 .one button{
@@ -182,7 +380,7 @@ nav a{
     width: 50%;
 }
 .twoImg{
-    background: url('/img/Новая папка/gen.png') center / cover;
+    background: url('/img/Новая папка/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg') center / cover;
     width: 100%;
     height: 250px;
     display: flex;
@@ -192,12 +390,12 @@ nav a{
     color: white;
     padding-left: 20px;
     text-transform: uppercase;
-
+    position: relative;
 }
 
 .twoImg:hover{
     transform: scale(1.1);
-    transition: 1s;
+    transition: .5s;
     
 }
 .two div{
@@ -206,7 +404,6 @@ nav a{
 .twoImg:hover div{
     margin-left: 40px;
     transition: 1s;
-
 
 }
 .two button{
@@ -223,7 +420,7 @@ nav a{
     width: 50%;
 }
 .threeImg{
-    background: url('/img/Новая папка/Engineering.png') center / cover;
+    background: url('/img/Новая папка/jose-pinto-fXllai8Px5I-unsplash.jpg') center / cover;
     width: 100%;
     height: 250px;
     display: flex;
@@ -233,15 +430,13 @@ nav a{
     padding-left: 20px;
     transition:1s;
     text-transform: uppercase;
-
+    position: relative;
 
 }
 
 .threeImg:hover{
     transform: scale(1.1);
-    transition: 1s; 
- 
-
+    transition: .5s; 
 }
 
 
@@ -260,8 +455,6 @@ nav a{
 .threeImg:hover div{
     margin-left: 30px;
     transition:1s;
-
-
 }
 
 
