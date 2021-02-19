@@ -16,14 +16,37 @@ main{
     display: block !important;
 }
 
+
 header{
     position: relative;
     z-index: 10;
 }
+.bannerCenterContent{
+    width: 90%;
+    z-index: 4;
+    position: relative;
+    margin: 100px auto;
+
+}
+
+.bannerText h1 {
+    color: white;
+    font-size:50px !important;
+    
+}
+.firstComp{
+    margin-top: 50px;
+    margin-left: 50px;
+    border-left: 5px solid white;
+    padding-left: 20px;
+}
+.firstComp h1{
+    color: gold;
+}
 
 .preloader{
     overflow: hidden !important;
-    background: url('../img/Новая\ папка/about.jpg') center / cover fixed;
+    background: url('../img/Новая папка/ab.jpg') center / cover fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -523,4 +546,9 @@ footer{
 .secFoot ol li a:hover{
     color: red ;
 }
+
+
+
+
+/* swipper */
 
