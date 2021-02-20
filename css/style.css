@@ -25,13 +25,15 @@ header{
     width: 90%;
     z-index: 4;
     position: relative;
-    margin: 100px auto;
+    margin:  auto;
+    margin-top: 190px;
 
 }
 
 .bannerText h1 {
     color: white;
     font-size:50px !important;
+    text-transform: uppercase;
     
 }
 .firstComp{
@@ -46,11 +48,9 @@ header{
 
 .preloader{
     overflow: hidden !important;
-    background: url('../img/Новая папка/ab.jpg') center / cover fixed;
+    background: url('../img/Новая папка/ab.jpg') center / cover ;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 .preloader::before{
@@ -63,19 +63,7 @@ header{
     background-color: rgba(0,0,0,.4);
 }
 
-.leftBanner{
-    width: 100% !important;
-}
 
-.leftBanner p{
-    position: relative;
-    z-index: 10;
-    font-size: 50px;
-    padding: 2rem;
-    text-align: center !important;
-    color: #fff;
-    text-shadow: 2px 4px 3px rgba(0,0,0,.3);
-}
 
 .rightBanner{
     width: 100% !important;
@@ -552,3 +540,34 @@ footer{
 
 /* swipper */
 
+.back{
+    background: url('/img/Новая папка/office.jpg') center / cover;
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.sl__slide{
+    position: relative;
+}
+.sl_text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    color: white !important;
+
+    text-align: center;
+}
+.sl_text {
+    padding: 5px;
+}
+.sl__slide img{
+    max-width: 100%;
+    height: auto;
+}

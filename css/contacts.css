@@ -21,10 +21,10 @@ html{
     position:relative;
 }
 .nav-link:hover{
-    background-color: black;
+    background-color: white;
     transition-delay: .3s;
     transition-duration: 0.3s;
-    color: white !important;
+    color: black !important;
 }
 .nav-link:before{
     content: '';
@@ -33,7 +33,7 @@ html{
     position:absolute;
     width: 0%;
     height: 1px;
-    background-color: black;
+    background-color: white;
     transition: 0.3s;
 }
 
@@ -58,7 +58,7 @@ html{
 
 
 nav a{
-    color: grey;
+    color: white !important;
 }
 
 
@@ -71,37 +71,6 @@ nav a{
     margin: 0 10px;
 }
 
-
-
-
-/* MAIN */
-
-.aboutBanner{
-    height:350px;
-    background: whitesmoke;
-}
-.centerBanner{
-    width: 90%;
-    margin: 0 auto;
-}
-.aboutCompany{
-    padding-top: 150px;
-    text-transform: uppercase;
-    font-weight: 300 !important;
-    letter-spacing: 20px;
-}
-.mainBanner{
-    display: flex;
-    justify-content: space-around;
-
-}
-.towns{
-    width: 45%;
-    margin-top: 35px;
-}
-.towns img{
-    width: 100%;
-}
 
 
 
@@ -120,15 +89,97 @@ nav a{
     text-align: center;
 }
 
+/* BAnner contacts */
 
+  .bannerContacts{
+    background: url('/img/Новая папка/contacts.jpg') top / cover;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  }
  
+  .bannerContacts:before{
+    background: rgba(0,0,0,.4);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+
+  .diller{
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .contactsCenter{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .inlineContacts{
+    display: flex;
+
+  }
+  .inlineContacts .cards{
+    margin: 0 15px;
+  }
+  .inlineContacts a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .inlineContacts a:hover{
+    color: inherit;
+  }
+  .cards{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+  .icon{
+    width: 100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .cards h4{
+    font-size: 20px;
+  }
 /* FORMSS */
-
-
+.bannerText{  
+  color: white;
+  border:1px solid white;
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  margin-top: 150px;
+  margin-left: -2px;
+  transition: 0.3s;
+}
+.bannerText a{
+  color: inherit;
+  text-decoration: none;
+}
+.bannerText a:hover{
+  color: inherit;
+}
+.bannerText:hover{
+  background: white;
+  transition: 0.3s;
+  color: black;
+}
+.bannerText h1{
+  font-size: 50px !important;
+}
 
 .containers {
     display: flex;
-    height: 100vh;
+    height: 80vh;
+    margin-top: 100px;
   }
   .hidd{
     overflow: hidden;
@@ -150,7 +201,7 @@ nav a{
     flex: 1;
     background-color: black;
     transition: 1s;
-    background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    background-image: url("/img/Новая папка/forms.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -159,7 +210,7 @@ nav a{
   
   .header > h2 {
     margin: 0;
-    color: #4f46a5;
+    color:brown;
   }
   
   .header > h4 {
@@ -202,7 +253,7 @@ nav a{
   .form > button {
     padding: 12px 10px;
     border: 0;
-    background: linear-gradient(to right, #de48b5 0%,#0097ff 100%); 
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 0%,brown 100%); 
     border-radius: 3px;
     margin-top: 10px;
     color: #fff;
