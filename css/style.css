@@ -6,7 +6,9 @@
 
 /* Body */
 
-
+body{
+    font-family: 'Brygada 1918', serif !important;
+}
 
 /* My Styles */
 main{
@@ -15,7 +17,14 @@ main{
 .inlineBanner{
     display: block !important;
 }
-
+.dropdown-menu{
+    background: none !important;
+    border:0 !important;
+  
+  }
+  .dropdown-item:hover{
+    background: none !important;
+  }
 
 header{
     position: relative;
@@ -48,7 +57,7 @@ header{
 
 .preloader{
     overflow: hidden !important;
-    background: url('../img/Новая папка/ab.jpg') center / cover ;
+    background: url('../img/Новая папка/ab-min.jpg') center / cover ;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -62,8 +71,17 @@ header{
     height: 100%;
     background-color: rgba(0,0,0,.4);
 }
-
-
+.btns{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.btns a{
+    color: black;
+    padding: 15px 20px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
 
 .rightBanner{
     width: 100% !important;
@@ -110,7 +128,10 @@ header{
     background: url('../img/about-main.jpg') center / cover fixed;
     transition: 1s;
 }
+.abinline{
+    display: flex;
 
+}
 .aboutUsMain::before{
     content: '';
     position: absolute;
@@ -129,7 +150,19 @@ header{
     position: relative;
     z-index: 2;
 }
-
+.abinline{
+    display: flex;
+    align-items: center;
+}
+.abinline .bl{
+    margin: 0 30px;
+}
+.aboutUsMain .title{
+    width:50%;
+}
+.aboutUsMain .righ{
+    width: 50%;
+}
 .aboutUsMain .title h1{
     font-size: 60px !important;
     font-weight: bold;
@@ -140,9 +173,47 @@ header{
     margin: 0 auto;
     font-size: 1.3rem;
 }
+.oborud h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
 
-.aboutUsMain button{
-    padding: 5px 20px;
+.mashCenter{
+    width: 90%;
+    margin:  auto;
+    position: relative;
+    margin-top: 50px;
+}
+.mashInline{
+    display: flex;
+}
+.mashInline .imgbox{
+    margin: 0 20px;
+    text-align: center;
+
+}
+.mashInline .imgbox h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.imgbox{
+    width:400px;
+    height: 300px;
+
+}
+
+.imgbox .img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.aboutUsMain a{
+    padding: 20px 70px;
+    text-decoration: none;
     background: none;
     border: 1px solid #fff;
     color: white;
@@ -152,7 +223,7 @@ header{
     transition: .3s;
 }
 
-.aboutUsMain button:hover{
+.aboutUsMain a:hover{
     color: #000;
     background-color: #fff;
 }
@@ -314,14 +385,19 @@ nav a{
     flex-wrap: wrap;
     overflow: hidden;
 }
-.flexBlock button:hover{
+.flexBlock a:hover{
     background-color: white;
     transition: 0.5s;
     color: black;
     border-color: white;
 }
-.flexBlock button{
-    border:1px solid white;
+.flexBlock a{
+    padding: 10px 20px;
+    text-decoration: none;
+    border:1px solid 
+    white;
+    color: white;
+    transition: 0.5s;
 }
 
 
@@ -375,6 +451,7 @@ nav a{
 
 .oneImg h4, .twoImg h4, .threeImg h4{
     text-shadow: 0px 0px 10px rgba(0,0,0,0.9) !important;
+    margin-bottom:30px;
 }
 
 .one button{
@@ -468,9 +545,58 @@ nav a{
     transition:1s;
 }
 
+.news{
+    width: 90%;
+    margin:  auto;
+    margin-top: 100px;
+}
+.generalNew{
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
+.generalNew{
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+.generalNew a{
+    color: black;
+    text-decoration: none;
+}
+.centerNew{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.inlineNews{
+    display: flex;
+}
+.inlineNews .cards{
+    margin: 0 20px;
+}
+.cards{
+    box-shadow: 0 5px 20px gainsboro;
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.cards:hover{
+    border-bottom: 3px solid red;
+}
+.cards .imgcard img{
+    width: 100%;
+}
+.cards-body{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.cards-body p:nth-child(1){
+    color: grey;
+}
+.cards-body p:nth-child(2){
+    font-size: 20px;
+}
 /* 
     FOOOTER
 
@@ -481,63 +607,55 @@ footer{
 }
 
 .centerFooter{
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
-.foot ul {
-    display: flex;
-    list-style: none;
-}
-.foot ul li{
-    margin: 0 30px;
-}
-.foot ul li a{
-    text-decoration: none;
-    color: rgba(0,0,0,.8) ;
-}
 .foot{
     display: flex;
-    justify-content: space-between;
 }
-.foot ol li{
+.foot ol{
+    margin: 0 25px;
     list-style: none;
 }
 .foot ol li a{
+    color: black;
     text-decoration: none;
-    color: rgba(0,0,0,.8) ;
+    font-weight: 300;
 }
-
-/* footer - Secfooter */
-
-
-.secFoot{
+.foot a:hover{
+    color: red;
+}
+.foot ol li{
+    margin: 10px 0;
+}
+.foot ol b{
+    font-size: 20px;
+}
+.polit{
     display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
+    justify-content: space-between;
 }
-
-.secFoot ul{
-    list-style: none;
-}
-.secFoot ol {
+.polit ol{
     display: flex;
 }
-.secFoot ol li{
-    margin: 0 10px;
+.polit ul{
     list-style: none;
+    font-size: 20px;
 }
-.secFoot ol li a{
-    color: rgba(0,0,0,.8) ;
+.polit ol li{
+
+    list-style: none;
+    margin: 0 20px;
 }
-
-.secFoot ol li a:hover{
-    color: red ;
+.polit ol li a{
+    color: black;
+    text-decoration: none;
 }
-
-
-
-
+.polit a:hover{
+    color: red;
+}
 /* swipper */
 
 .back{

@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap');
+
+
+/* Body */
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Brygada 1918', serif !important;
+}
+body{
+
     margin: 0;
     padding: 0;
     width: 100%;
    
   
+}
+.dropdown-menu{
+  background: none !important;
+  border:0 !important;
+
+}
+.dropdown-item:hover{
+  background: none !important;
 }
 html{
     scroll-behavior: smooth;
@@ -356,57 +371,51 @@ footer{
 }
 
 .centerFooter{
-    width: 70%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 }
 
-.foot ul {
-    display: flex;
-    list-style: none;
-}
-.foot ul li{
-    margin: 0 30px;
-}
-.foot ul li a{
-    text-decoration: none;
-    color: rgba(0,0,0,.8) ;
-}
 .foot{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
 }
-.foot ol li{
-    list-style: none;
+.foot ol{
+  margin: 0 25px;
+  list-style: none;
 }
 .foot ol li a{
-    text-decoration: none;
-    color: rgba(0,0,0,.8) ;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
 }
+.foot a:hover{
+  color: red;
+}
+.foot ol li{
+  margin: 10px 0;
+}
+.foot ol b{
+  font-size: 20px;
+}
+.polit{
+  display: flex;
+  justify-content: space-between;
+}
+.polit ol{
+  display: flex;
+}
+.polit ul{
+  list-style: none;
+  font-size: 20px;
+}
+.polit ol li{
 
-/* footer - Secfooter */
-
-
-.secFoot{
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
+  list-style: none;
+  margin: 0 20px;
 }
-
-.secFoot ul{
-    list-style: none;
+.polit ol li a{
+  color: black;
+  text-decoration: none;
 }
-.secFoot ol {
-    display: flex;
+.polit a:hover{
+  color: red;
 }
-.secFoot ol li{
-    margin: 0 10px;
-    list-style: none;
-}
-.secFoot ol li a{
-    color: rgba(0,0,0,.8) ;
-}
-
-.secFoot ol li a:hover{
-    color: red ;
-}
-

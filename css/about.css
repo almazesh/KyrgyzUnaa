@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap');
+
+
+/* Body */
+
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Brygada 1918', serif !important;
+}
+body{
+
     margin: 0;
     padding: 0;
     width: 100%;
   
 }
+.dropdown-menu{
+    background: none !important;
+    border:0 !important;
+  
+  }
+  .dropdown-item:hover{
+    background: none !important;
+  }
 html{
     scroll-behavior: smooth;
 }
@@ -129,7 +146,77 @@ nav{
     color: gold;
 }
 
+.onasCenter{
+    width: 80%;
+    margin: auto;
+}
+.textO h1{
+    text-align: center;
+    font-size:60px;
+    margin-top: 50px;
+    border-bottom: 2px solid orange;
+}
+.textO .text{
+    margin-top: 50px;
+}
 
+.cennoctCenter{
+    width: 100%;
+    margin:  auto;
+    margin-top: 50px;
+  
+}
+.cenInline{
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+.cenInline .cart{
+    width:400px;
+    height: 300px;
+    text-align: center;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.7s;
+}
+.cenInline .cart:hover{
+    background-color:#f9004d ;
+    transition: 0.7s;
+    color: white ;
+
+}
+.cenInline .cart:hover p{
+    color: white;
+}
+.cart p{
+    color: grey;
+    font-size: 18px;
+}
+.cenInline .cart:hover i{   
+    transition: 0.7s;
+    color: white;
+}
+.cart i{
+    font-size: 55px;
+    color: #f9004d;
+    margin-bottom: 10px;
+}
+.cart h1{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.cenT h1{
+    font-size: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
 /* About */
 
 .aboutBlank{
@@ -138,8 +225,6 @@ nav{
      width: 100%;
      height: 100vh;
 }
-
-
 
 
 
@@ -308,61 +393,54 @@ footer{
 }
 
 .centerFooter{
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
 }
 
-.foot ul {
-    display: flex;
-    list-style: none;
-}
-.foot ul li{
-    margin: 0 30px;
-}
-.foot ul li a{
-    text-decoration: none;
-    color: rgba(0,0,0,.8) ;
-}
 .foot{
     display: flex;
-    justify-content: space-between;
 }
-.foot ol li{
+.foot ol{
+    margin: 0 25px;
     list-style: none;
 }
 .foot ol li a{
+    color: black;
     text-decoration: none;
-    color: rgba(0,0,0,.8) ;
+    font-weight: 300;
 }
-
-/* footer - Secfooter */
-
-
-.secFoot{
+.foot a:hover{
+    color: red;
+}
+.foot ol li{
+    margin: 10px 0;
+}
+.foot ol b{
+    font-size: 20px;
+}
+.polit{
     display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
+    justify-content: space-between;
 }
-
-.secFoot ul{
-    list-style: none;
-}
-.secFoot ol {
+.polit ol{
     display: flex;
 }
-.secFoot ol li{
-    margin: 0 10px;
+.polit ul{
     list-style: none;
+    font-size: 20px;
 }
-.secFoot ol li a{
-    font-size: 25px;
-    color: rgba(0,0,0,.8) ;
-}
+.polit ol li{
 
-.secFoot ol li a:hover{
-    color: red ;
+    list-style: none;
+    margin: 0 20px;
 }
-
+.polit ol li a{
+    color: black;
+    text-decoration: none;
+}
+.polit a:hover{
+    color: red;
+}
 
 
 /* swipper */

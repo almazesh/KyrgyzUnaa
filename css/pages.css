@@ -11,14 +11,21 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-
   
 }
+.dropdown-menu{
+    background: none !important;
+    border:0 !important;
+  
+  }
+  .dropdown-item:hover{
+    background: none !important;
+  }
 html{
     scroll-behavior: smooth;
 }
 
-.active{    
+.actives{    
   
     color: gold !important;
 }
@@ -27,10 +34,10 @@ html{
     position:relative;
 }
 .nav-link:hover{
-    background-color: white;
+    background-color: black;
     transition-delay: .3s;
     transition-duration: 0.3s;
-    color: black !important;
+    color: white !important;
 }
 .nav-link:before{
     content: '';
@@ -39,7 +46,7 @@ html{
     position:absolute;
     width: 0%;
     height: 1px;
-    background-color: white;
+    background-color: black;
     transition: 0.3s;
 }
 
@@ -64,7 +71,7 @@ html{
 
 
 nav a{
-    color: white !important;
+    color: grey;
 }
 
 
@@ -80,78 +87,29 @@ nav a{
 
 
 
-/* MAIN */
-.dropdown-menu{
-    background: none !important;
-    border:0 !important;
-  
-  }
-  .dropdown-item:hover{
-    background: none !important;
-  }
-.sertBanner{
-    background: url("/img/Новая папка/sertB.jpg") center / cover;
-    width: 100%;
-    height: 80vh;
-    
-    position: relative;
-}
-.sertBanner:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.2);
-}
-.textS{
-    padding-top: 150px;
-    color: white;
-    position: relative;
-    padding-left: 80px;
-}
-.textS h1{
-    font-size: 75px ;
-
-}
-
-
-.paperBlock{
-    width: 90%;
-    margin: auto;
-    margin-top: 150px;
-}
-.firstInline{
-    display: flex;
-    justify-content: space-around;
-}
-.secondInline{
-    margin-top: 150px;
-    display: flex;
-    justify-content: space-around;
-}
-.left{
+.banner{
+    text-align: center;
     padding-top: 50px;
 }
-.left h3{
-    padding-bottom: 20px;
+.centerBan{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
 }
-.left .aw{
-    color: gold;
-    font-size: 45px;
-    text-align: center;
+.inlineBan{
+    display: flex;
+    justify-content: center;
 }
-.left p{
-    width: 500px;
+.left{
+    width: 30%;
 }
-.right img{
-    box-shadow: 0 5px 20px black;
-
+.left img{
+    width: 100%;
 }
-
-
-
+.right{
+    width: 50%;
+    margin-left: 50px;
+}
 /* 
     FOOOTER
 
