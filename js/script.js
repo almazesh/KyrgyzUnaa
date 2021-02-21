@@ -58,31 +58,3 @@ threeImg.addEventListener('mousemove', e =>{
 
 
 
-// var arrs = []
-
-// var ask = +prompt('Counter')
-
-// function Asks(arr){
-//     for(var i = 0; i < ask ; i++){
-//         var friend  = prompt('Name')
-//         var ages = prompt('Age')
-//         arr[i] = {
-//             Name:friend, 
-//             Age:ages
-//         }
-//     }
-//     var girl = confirm('Do you want to girl')
-//     if(girl){
-//         for(var i = 0 ; i < 1; i++){
-//             var names = prompt('Her name')
-//             var herAge = prompt('Her age')
-//             arr[i] = {
-//                 hername:names,
-//                 herage:herAge
-//             }
-//         }
-        
-//     }
-//     return arr
-// }
-// console.log(Asks(arrs))
