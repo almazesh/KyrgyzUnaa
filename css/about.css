@@ -33,31 +33,15 @@ html{
     
 }
 .nav-link{
-    text-transform: uppercase;
     text-decoration: none;
     position:relative;
     color:white;
 }
 .nav-link:hover{
-    background-color: white;
-    transition-delay: .3s;
     transition-duration: 0.3s;
-    color: black !important;
-}
-.nav-link:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: 0.3s;
+    color: gold !important;
 }
 
-.nav-link:hover:before{
-    width: 100%;
-}
 
 /* NAV */
 
@@ -84,7 +68,7 @@ nav{
 
 
 .containerFluid{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
 }
@@ -92,9 +76,22 @@ nav{
     margin: 0 10px;
 }
 
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
 
-
-
+.navbar-nav .nav-item{
+    margin: 0 5px;
+}
+.dropdown-item{
+    color: white !important;
+    padding:7px !important;
+}
 /* MAIN */
 
 
@@ -118,6 +115,10 @@ nav{
     z-index: 2;
 }
 
+    .containerFluid{
+        width: 82% !important;
+        margin: auto;
+    }
 
 /* Banner TExt */
 
@@ -161,7 +162,7 @@ nav{
 }
 
 .cennoctCenter{
-    width: 100%;
+    width: 95%;
     margin:  auto;
     margin-top: 50px;
   
@@ -175,8 +176,8 @@ nav{
 }
 
 .cenInline .cart{
-    width:400px;
-    height: 300px;
+    width:300px;
+    height: 320px;
     text-align: center;
     margin: 10px 30px;
     display: flex;
@@ -330,6 +331,9 @@ nav{
     height: 100%;
     background-color: rgba(0,0,0,0.8);
 }
+.parent a{
+    color: black !important;
+}
 .parent{
     transform-style: preserve-3d;
     display: flex;
@@ -340,7 +344,7 @@ nav{
     position: relative;
     width: 350px;
     height: 300px;
-    margin: 0 40px;
+    margin: 0 30px;
     margin-top: 120px;
     border-radius: 50px;
     transform-style: preserve-3d;
@@ -399,6 +403,7 @@ footer{
 
 .foot{
     display: flex;
+    justify-content: center;
 }
 .foot ol{
     margin: 0 25px;

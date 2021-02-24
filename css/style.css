@@ -25,13 +25,18 @@ main{
   .dropdown-item:hover{
     background: none !important;
   }
-
+  .dropdown-item{
+      padding:7px !important;
+  }
+  .navbar-nav .nav-item{
+     margin: 0 5px;
+  }
 header{
     position: relative;
     z-index: 10;
 }
 .bannerCenterContent{
-    width: 90%;
+    width: 95%;
     z-index: 4;
     position: relative;
     margin:  auto;
@@ -54,7 +59,9 @@ header{
 .firstComp h1{
     color: gold;
 }
-
+nav ol{
+    padding-top:2px;
+}
 .preloader{
     overflow: hidden !important;
     background: url('../img/Новая папка/ab-min.jpg') center / cover ;
@@ -76,11 +83,17 @@ header{
     margin-top: 50px;
 }
 .btns a{
-    color: black;
-    padding: 15px 20px;
-    background-color: white;
+    color: white;
+    border:1px solid white;
+    padding: 20px 100px;
     text-decoration: none;
     font-size: 20px;
+    transition: 0.5s;
+}
+.btns a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }
 
 .rightBanner{
@@ -159,9 +172,13 @@ header{
 }
 .aboutUsMain .title{
     width:50%;
+    text-align: center;
 }
 .aboutUsMain .righ{
     width: 50%;
+}
+.righ a{
+    padding: 30px 100px !important;
 }
 .aboutUsMain .title h1{
     font-size: 60px !important;
@@ -187,6 +204,7 @@ header{
 }
 .mashInline{
     display: flex;
+    justify-content: center;
 }
 .mashInline .imgbox{
     margin: 0 20px;
@@ -209,7 +227,28 @@ header{
     height: 100%;
     
 }
-
+.cards-body a{
+    margin: 20px 0 !important;
+    padding: 10px 20px;
+    color:white;
+    text-decoration: none;
+    background-color: crimson;
+    border-radius:10px;
+}
+.cards-body a:hover{
+    color: white;
+}
+.bt{
+    text-align: right;
+}
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
 
 .aboutUsMain a{
     padding: 20px 70px;
@@ -274,25 +313,11 @@ html{
    
 }
 .nav-link:hover{
-    background-color: white;
-    transition-delay: .3s;
+
     transition-duration: 0.3s;
-    color: black !important;
-}
-.nav-link:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: 0.3s;
+    color: gold !important;
 }
 
-.nav-link:hover:before{
-    width: 100%;
-}
 
 /* NAV */
 
@@ -316,21 +341,33 @@ nav a{
 
 
 .containerFluid{
-    width: 90%;
+    width: 82% !important;
     margin: 0 auto;
     display: flex;
 }
 .navbar-nav .nav-item{
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 
 
 
 /* BANNER */
+.imgbox .img{
+    overflow: hidden;
+    border-radius: 10px;
+    
 
 
+}
 
+.imgbox .img img{
+    transition: 1s  ;
+}
+.imgbox .img img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
 
 
 .inlineBanner{
@@ -468,7 +505,7 @@ nav a{
     width: 50%;
 }
 .twoImg{
-    background: url('/img/Новая папка/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg') center / cover;
+    background: url('/img/Новая папка/newss.jpg') center / cover;
     width: 100%;
     height: 250px;
     display: flex;
@@ -570,6 +607,7 @@ nav a{
 }
 .inlineNews{
     display: flex;
+    justify-content: center;
 }
 .inlineNews .cards{
     margin: 0 20px;
@@ -579,9 +617,12 @@ nav a{
     width: 400px;
     height: 500px;
     position: relative;
+    transition: 0.5s;
 }
 .cards:hover{
     border-bottom: 3px solid red;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .cards .imgcard img{
     width: 100%;
@@ -614,6 +655,7 @@ footer{
 
 .foot{
     display: flex;
+    justify-content: center;
 }
 .foot ol{
     margin: 0 25px;

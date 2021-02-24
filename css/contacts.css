@@ -20,6 +20,9 @@ body{
   border:0 !important;
 
 }
+nav ol{
+  padding-top: 3px;
+}
 .dropdown-item:hover{
   background: none !important;
 }
@@ -36,26 +39,9 @@ html{
     position:relative;
 }
 .nav-link:hover{
-    background-color: white;
-    transition-delay: .3s;
     transition-duration: 0.3s;
-    color: black !important;
+    color: gold !important;
 }
-.nav-link:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: 0.3s;
-}
-
-.nav-link:hover:before{
-    width: 100%;
-}
-
 /* NAV */
 
 .navbar-brand img{
@@ -76,18 +62,26 @@ nav a{
     color: white !important;
 }
 
-
+.dropdown-item{
+  padding:7px !important;
+}
 .containerFluid{
-    width: 90%;
+    width: 82% !important;
     margin: 0 auto;
     display: flex;
 }
 .navbar-nav .nav-item{
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-
-
+.icons{
+  display: flex;
+  list-style: none;
+}
+.icons li{
+  margin: 0 10px !important;
+  font-size: 25px;
+}
 
 
 /* Content contacts */
@@ -134,10 +128,21 @@ nav a{
   }
   .inlineContacts{
     display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
   .inlineContacts .cards{
     margin: 0 15px;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  .inlineContacts .cards:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.5s;
+  }
+  .inlineContacts .cards:hover h4{
+    color: white;
   }
   .inlineContacts a{
     color: inherit;
@@ -200,140 +205,196 @@ nav a{
     overflow: hidden;
 
   }
-  .left {
-    overflow: hidden;
+  .center{
+    width: 80%;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
-    animation-name: left;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 1s;
+    align-items: center;
+    margin-top: 150px;
+    height: 100vh;
+  }
+
+  .contBack{
+    background: url('/img/Новая папка/connect.jpg') left / cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .login-box {
+    width:60%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+    border-radius: 10px;
+  }
+  .login-box::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;  
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.5);
+  }
+  .login-box h2 {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
   }
   
-  .right {
-    flex: 1;
-    background-color: black;
-    transition: 1s;
-    background-image: url("/img/Новая папка/forms.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
   }
  
   
-  .header > h2 {
-    margin: 0;
-    color:brown;
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
   }
   
-  .header > h4 {
-    margin-top: 10px;
-    font-weight: normal;
-    font-size: 15px;
-    color: rgba(0,0,0,.4);
-  }
-  
-  .form {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form > p {
-    text-align: right;
-  }
-  
-  .form > p > a {
-    color: #000;
-    font-size: 14px;
-  }
-  
-  .form-field {
-    height: 46px;
-    padding: 0 16px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    font-family: 'Rubik', sans-serif;
-    outline: 0;
-    transition: .2s;
-    margin-top: 20px;
-  }
-  
-  .form-field:focus {
-    border-color: #0f7ef1;
-  }
-  
-  .form > button {
-    padding: 12px 10px;
-    border: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.9) 0%,brown 100%); 
-    border-radius: 3px;
-    margin-top: 10px;
+  .login-box a:hover {
+    background: #03e9f4;
     color: #fff;
-    letter-spacing: 1px;
-    font-family: 'Rubik', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
   }
   
-  .animation {
-    animation-name: move;
-    animation-duration: .4s;
-    animation-fill-mode: both;
-    animation-delay: 2s;
+  .login-box a span {
+    position: absolute;
+    display: block;
   }
   
-  .a1 {
-    animation-delay: 2s;
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
   }
   
-  .a2 {
-    animation-delay: 2.1s;
-  }
-  
-  .a3 {
-    animation-delay: 2.2s;
-  }
-  
-  .a4 {
-    animation-delay: 2.3s;
-  }
-  
-  .a5 {
-    animation-delay: 2.4s;
-  }
-  
-  .a6 {
-    animation-delay: 2.5s;
-  }
-  
-  @keyframes move {
+  @keyframes btn-anim1 {
     0% {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-40px);
+      left: -100%;
     }
-  
-    100% {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
+    50%,100% {
+      left: 100%;
     }
   }
   
-  @keyframes left {
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
     0% {
-      opacity: 0;
-      width: 0;
+      top: -100%;
     }
-  
-    100% {
-      opacity: 1;
-      padding: 20px 40px;
-      width: 440px;
+    50%,100% {
+      top: 100%;
     }
   }
-
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
 
   /* MAPS */
 
@@ -373,10 +434,12 @@ footer{
 .centerFooter{
   width: 95%;
   margin: 0 auto;
+  margin-top:100px;
 }
 
 .foot{
   display: flex;
+  justify-content: center;
 }
 .foot ol{
   margin: 0 25px;

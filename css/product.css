@@ -27,25 +27,10 @@ html{
 }
 
 .nav-link:hover{
-    background-color: white;
-    transition-delay: .3s;
     transition-duration: 0.3s;
-    color: black !important;
-}
-.nav-link:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: 0.3s;
+    color: gold !important;
 }
 
-.nav-link:hover:before{
-    width: 100%;
-}
 
 /* NAV */
 
@@ -69,16 +54,29 @@ html{
 
 
 .containerFluid{
-    width: 90%;
-    margin: 0 auto;
+    width: 82% !important;
+    margin: auto;
     display: flex;
 }
 .navbar-nav .nav-item{
-    margin: 0 10px;
+    margin: 0 0px;
+}
+.dropdown-menu{
+  width: 0% !important;
+}
+.dropdown-item{
+  width:0% !important;
+  padding: 7px !important;
 }
 
-
-
+.icons{
+  display: flex;
+  list-style: none;
+}
+.icons li{
+  margin: 0 10px !important;
+  font-size: 25px;
+}
 /* Main */
 
 .productCenter{
@@ -226,11 +224,26 @@ animation: icon 1.5s infinite forwards;
   display: table-cell;
   vertical-align: middle;
 }
-
+.rightSide{
+  width: 100%;
+  margin: auto;
+}
+.inlineCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background:rgb(245, 240, 240);
+  /* margin-left: auto ; */
+  width: 100%;
+}
+.inlineCards .containers{
+  margin: 10px 20px;
+}
 .el-wrapper {
-  width:270px !important;
+  width:300px !important;
   padding: 15px;
-  box-shadow: 0 5px 20px gainsboro;
+  
   margin: 30px auto;
   background-color: #fff;
   border-radius: 5px;
@@ -526,6 +539,7 @@ footer{
 
 .foot{
   display: flex;
+  justify-content: center;
 }
 .foot ol{
   margin: 0 25px;
@@ -732,3 +746,217 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   border: 1px solid rgba(0, 0, 0, 0.05); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .center{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    height: 100vh;
+  }
+
+  .contBack{
+    background: url('/img/Новая папка/cont.jpg') left / cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .contBack::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .login-box {
+    width:60%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+    border-radius: 10px;
+  }
+  .login-box::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;  
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.5);
+  }
+  .login-box h2 {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+ 
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  

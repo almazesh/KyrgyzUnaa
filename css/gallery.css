@@ -18,8 +18,21 @@ body{
     border:0 !important;
   
   }
+  .containerFluid{
+      width: 82% !important;
+      margin: auto;
+      
+  }
+  .navbar-nav .navbar-item{
+      margin: 0 5px;
+  }
   .dropdown-item:hover{
     background: none !important;
+  }
+  .dropdown-item{
+    padding:7px !important;
+    color: white !important;
+
   }
 html{
     scroll-behavior: smooth;
@@ -34,25 +47,10 @@ html{
     position:relative;
 }
 .nav-link:hover{
-    background-color: black;
-    transition-delay: .3s;
     transition-duration: 0.3s;
-    color: white !important;
-}
-.nav-link:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: black;
-    transition: 0.3s;
+    color: gold !important;
 }
 
-.nav-link:hover:before{
-    width: 100%;
-}
 
 /* NAV */
 
@@ -75,17 +73,25 @@ nav a{
 }
 
 
-.containerFluid{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-}
+
 .navbar-nav .nav-item{
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-
-
+.cards-body a{
+    margin: 20px 0 !important;
+    padding: 10px 20px;
+    color:white;
+    text-decoration: none;
+    background-color: crimson;
+    border-radius:10px;
+}
+.cards-body a:hover{
+    color: white;
+}
+.bt{
+    text-align: right;
+}
 
 /* MAIN */
 .backs{
@@ -175,20 +181,32 @@ nav a{
     margin: auto;
     margin-top: 50px;
 }
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
 .inlineNews{
     display: flex;
+    justify-content: center;
 }
 .inlineNews .cards{
     margin: 0 20px;
 }
 .cards{
+    transition: 0.5s;
     box-shadow: 0 5px 20px gainsboro;
-    width: 400px;
-    height: 500px;
+    width: 320px !important;
+    height: 300px;
     position: relative;
 }
 .cards:hover{
     border-bottom: 3px solid red;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .cards .imgcard img{
     width: 100%;
@@ -272,6 +290,7 @@ footer{
 
 .foot{
     display: flex;
+    justify-content: center;
 }
 .foot ol{
     margin: 0 25px;

@@ -58,3 +58,12 @@ threeImg.addEventListener('mousemove', e =>{
 
 
 
+document.queryCommandState('.pole');
+var arr = []
+
+arr.length = 10;
+
+for(var i = 0;  i < arr.length;i++){
+    arr[i] = Math.floor(Math.random() * 200)
+}
+console.log(arr)

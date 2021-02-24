@@ -27,25 +27,13 @@ html{
     position:relative;
 }
 .nav-link:hover{
-    background-color: white;
-    transition-delay: .3s;
     transition-duration: 0.3s;
-    color: black !important;
+    color: gold !important;
 }
-.nav-link:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position:absolute;
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    transition: 0.3s;
+nav ol{
+    padding-top: 5px;
 }
 
-.nav-link:hover:before{
-    width: 100%;
-}
 
 /* NAV */
 
@@ -69,15 +57,24 @@ nav a{
 
 
 .containerFluid{
-    width: 90%;
+    width: 82% !important;
     margin: 0 auto;
     display: flex;
 }
 .navbar-nav .nav-item{
-    margin: 0 10px;
+    margin: 0 5px;
 }
-
-
+.dropdown-item{
+    padding:7px !important ;
+}
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
 
 
 /* MAIN */
@@ -92,8 +89,7 @@ nav a{
 .sertBanner{
     background: url("/img/Новая папка/sertB.jpg") center / cover;
     width: 100%;
-    height: 80vh;
-    
+    height: 100vh;
     position: relative;
 }
 .sertBanner:before{
@@ -103,7 +99,7 @@ nav a{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.4);
 }
 .textS{
     padding-top: 150px;
@@ -168,6 +164,7 @@ footer{
 
 .foot{
     display: flex;
+    justify-content: center;
 }
 .foot ol{
     margin: 0 25px;
