@@ -72,8 +72,8 @@ header nav li a{
         transform: rotate(360deg);
     }
 }
-.active{
-    color: gold !important;
+.actives{
+    color: #03e9f4 !important;
 }
 .dropdown-menu{
     background: none !important;
@@ -102,7 +102,7 @@ nav a{
 .nav-link:hover{
 
     transition-duration: 0.3s;
-    color: gold !important;
+    color: #03e9f4 !important;
 }
 .containerFluid{
     width: 86% !important;
@@ -113,8 +113,9 @@ nav a{
     margin: 0 5px;
 }
 
-
-
+.navbar-dark .navbar-toggler{
+    border:none;
+}
 
 
 
@@ -648,7 +649,7 @@ nav a{
 }
 .cards{
     box-shadow: 0 5px 20px gainsboro;
-    width: 340px;
+    width: 350px;
     height: 500px;
     position: relative;
     transition: 0.5s;
@@ -890,6 +891,39 @@ nav a{
     }
 }
 
+@media (max-width:320px){
+    .collapse{
+        background: rgba(0,0,0,.9);
+        padding: 25px;
+        transition: 0.5s;
+        width: 100%;
+    }
+    .collapse ol li a span{
+        display: block;
+    }
+    .collapse ol li .tel{
+        display: flex;
+    }
+
+    .navbar-dark .navbar-toggler{
+        border:none;
+    }
+}
+
+@media (max-width:991px){
+    .collapse{
+        background: rgba(0,0,0,.9);
+        padding: 25px;
+        transition: 0.5s;
+        width: 100%;
+    }
+    .collapse ol li a span{
+        display: block;
+    }
+    .collapse ol li .tel{
+        display: flex;
+    }
+}
 
 
 
@@ -1063,7 +1097,15 @@ nav a{
 
 
 
+
+
+
+
+
 /* Три блока скейл */
+
+
+
 
 
 
@@ -1272,6 +1314,8 @@ nav a{
 
 
 
+
+
 @media (max-width:762px)
 {
     .inlineNews .cards{
@@ -1314,6 +1358,13 @@ nav a{
 
 
 /* FOOOTER */
+
+
+
+
+
+
+
 
 
 @media (max-width:868px){
