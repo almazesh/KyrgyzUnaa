@@ -4,17 +4,60 @@
 
 /* Body */
 
-body{
-    font-family: 'Brygada 1918', serif !important;
-}
-body{
 
+body{
+  font-family: 'Brygada 1918', serif !important;
     margin: 0;
     padding: 0;
     width: 100%;
    
   
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+/* NAV */
+
+
+
+
+
+header{
+  position: relative;
+  z-index: 10;
+}
+header nav{
+  position: absolute !important;
+  width: 100% !important;
+  background-color: rgba(0,0,0,0);
+}
+
+header nav li a{
+  color: #fff !important;
+}
+
+
+
+.active{    
+  
+  color: gold !important;
+}
+.nav-link{
+  text-decoration: none;
+  position:relative;
+}
+.nav-link:hover{
+  transition-duration: 0.3s;
+  color: gold !important;
+}
+
 .dropdown-menu{
   background: none !important;
   border:0 !important;
@@ -26,23 +69,6 @@ nav ol{
 .dropdown-item:hover{
   background: none !important;
 }
-html{
-    scroll-behavior: smooth;
-}
-
-.active{    
-  
-    color: gold !important;
-}
-.nav-link{
-    text-decoration: none;
-    position:relative;
-}
-.nav-link:hover{
-    transition-duration: 0.3s;
-    color: gold !important;
-}
-/* NAV */
 
 .navbar-brand img{
     animation: rotate 5s linear infinite;
@@ -66,7 +92,7 @@ nav a{
   padding:7px !important;
 }
 .containerFluid{
-    width: 82% !important;
+    width: 85% !important;
     margin: 0 auto;
     display: flex;
 }
@@ -74,31 +100,17 @@ nav a{
     margin: 0 5px;
 }
 
-.icons{
-  display: flex;
-  list-style: none;
-}
-.icons li{
-  margin: 0 10px !important;
-  font-size: 25px;
-}
-
-
-/* Content contacts */
 
 
 
-.backWhite{
-    background-color: white;
- 
-}
-.centerContacts{
-    margin-top: 20px;
-    padding: 100px;
-    text-align: center;
-}
 
-/* BAnner contacts */
+
+
+/* ЗАДНИЙ ФОН ДВА МУЖИКА */
+
+
+
+
 
   .bannerContacts{
     background: url('/img/Новая папка/contacts.jpg') top / cover;
@@ -114,12 +126,65 @@ nav a{
     height: 100%;
     position: absolute;
   }
+  
+
+
+.bannerText {
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+.child{  
+  color: white;
+  border:1px solid white;
+  width: 500px;
+  padding: 20px;
+  margin-left: -2px;
+  transition: 0.3s;
+}
+.bannerText h1{
+  position: relative;
+
+}
+.bannerText a{
+  color: inherit;
+  text-decoration: none;
+}
+.bannerText a:hover{
+  color: inherit;
+}
+.child:hover{
+  background: white;
+  transition: 0.3s;
+  color: black;
+}
+.bannerText h1{
+  font-size: 50px !important;
+}
+
+
+
+
+
+
+  /* БЛОК ПО СВЯЗИ ДИЛЛЕРАМ */
+
+
+
 
 
   .diller{
     text-align: center;
     margin-top: 100px;
   }
+
+
+
+
+  /* КОНТАКТНЫЕ И АДРЕСНЫЕ КАРТОЧКИ 5 ШТ */
+
+
+
 
   .contactsCenter{
     width: 80%;
@@ -169,32 +234,20 @@ nav a{
   .cards h4{
     font-size: 20px;
   }
-/* FORMSS */
-.bannerText{  
-  color: white;
-  border:1px solid white;
-  position: relative;
-  width: 500px;
-  padding: 20px;
-  margin-top: 150px;
-  margin-left: -2px;
-  transition: 0.3s;
-}
-.bannerText a{
-  color: inherit;
-  text-decoration: none;
-}
-.bannerText a:hover{
-  color: inherit;
-}
-.bannerText:hover{
-  background: white;
-  transition: 0.3s;
-  color: black;
-}
-.bannerText h1{
-  font-size: 50px !important;
-}
+
+
+
+
+
+
+
+/* АВТОРИЗАЦИЯ */
+
+
+
+
+
+
 
 .containers {
     display: flex;
@@ -222,7 +275,7 @@ nav a{
   }
   .login-box {
     width:60%;
-    height: 100%;
+    height: 600px;
     padding: 40px;
     position: relative;
     border-radius: 10px;
@@ -396,7 +449,22 @@ nav a{
   }
   
 
-  /* MAPS */
+
+
+
+
+
+
+
+
+  /* КАРТА И АДРЕСА */
+
+
+
+
+
+
+
 
 
 
@@ -422,10 +490,31 @@ nav a{
 
 
 
+
+
+
 /* 
     FOOOTER
 
 */
+
+
+
+
+
+
+
+
+
+
+.icons{
+  display: flex;
+  list-style: none;
+}
+.icons li{
+  margin: 0 10px !important;
+  font-size: 25px;
+}
 
 footer{
     margin: 100px 0;

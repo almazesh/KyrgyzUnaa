@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap');
+
+
+/* Body */
+
+body{
+    font-family: 'Brygada 1918', serif !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* NAV */
+
+
+
+
+.actives{    
+  
+    color:  #03e9f4 !important;
+}
+.nav-link{
+    text-decoration: none;
+    position:relative;
+}
+.nav-link:hover{
+    transition-duration: 0.3s;
+    color:  #03e9f4 !important;
+}
+
+.dropdown-menu{
+    background: none !important;
+    border:0 !important;
+  
+  }
+  .containerFluid{
+      width: 82% !important;
+      margin: auto;
+      
+  }
+  .navbar-nav .navbar-item{
+      margin: 0 5px;
+  }
+  .dropdown-item:hover{
+    background: none !important;
+  }
+  .dropdown-item{
+    padding:7px !important;
+
+  }
+
+.navbar-brand img{
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+nav a{
+    color: grey;
+}
+
+
+
+
+
+/* 
+
+        НАВИГАЦИОННЫЕ БЛОКИ ПО БЛОКАМ
+
+*/
+
+
+
+
+
+
+.textCenter{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.menuCenter{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.menuInline li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menuInline li:hover{
+    background: lightblue;
+    transition: 0.5s;
+}
+.menuInline{
+    padding-left: 0;
+    width: 500px;
+    list-style: none;
+    
+}
+.menuInline li{
+    transition: 0.5s;
+    text-align: center;
+    margin: 10px 0 !important;
+    padding: 20px 20px;
+    background-color: rgba(0,0,0,0.8);
+}
+.inlines{
+    display: flex;
+}
+.inlines ul{
+    margin: 0 20px;
+}
+.crea{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* НА СТАДИИ РАЗРАБОТКИ */
+
+
+
+
+
+
+
+
+
+
+.widthCenter{
+    width: 80%;
+    margin: auto;
+}
+
+.creatInline .left img{
+    width: 800px;
+    height: 400px;
+    margin: 30px;
+
+}
+.left , .left2 , .left3 , .left4 , .left5 , .left6 , .left7{
+    text-align: center;
+}
+.creatCenter{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.creatInline .left2 img{
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+
+}
+.creatInline .left3{
+    width: 600px;
+    height: 500px;
+    background: url('/img/Новая папка/creat3.png') center / cover;
+    float: left;
+    margin: 30px;
+
+}
+.creatInline .left4{
+    width: 600px;
+    height: 400px;
+    background: url('/img/Новая папка/creat4.jpg') center / cover;
+    float: right;
+    margin: 30px;
+
+}
+.creatInline .left5{
+    width: 600px;
+    height: 400px;
+    background: url('/img/Новая папка/creat5.jpg') center / cover;
+    float: left;
+    margin: 30px;
+
+}
+.creatInline .left6{
+    width: 600px;
+    height: 400px;
+    background: url('/img/Новая папка/creat6.jpg') center / cover;
+    float: right;
+    margin: 30px;
+
+}
+.creatInline .left7{
+    width: 600px;
+    height: 400px;
+    background: url('/img/Новая папка/creat7.jpg') center / cover;
+    float: right;
+    margin: 30px;
+
+}
+.creatInline .right{
+    padding-left: 20px;
+    
+}
+
+
+
+
+
+/* ФУУУТЕР */
+
+
+
+
+
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
+footer{
+    margin: 100px 0;
+}
+
+.centerFooter{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+}
+.foot ol{
+    margin: 0 25px;
+    list-style: none;
+}
+.foot ol li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+.foot a:hover{
+    color: red;
+}
+.foot ol li{
+    margin: 10px 0;
+}
+.foot ol b{
+    font-size: 20px;
+}
+.polit{
+    display: flex;
+    justify-content: space-between;
+}
+.polit ol{
+    display: flex;
+}
+.polit ul{
+    list-style: none;
+    font-size: 20px;
+}
+.polit ol li{
+
+    list-style: none;
+    margin: 0 20px;
+}
+.polit ol li a{
+    color: black;
+    text-decoration: none;
+}
+.polit a:hover{
+    color: red;
+}

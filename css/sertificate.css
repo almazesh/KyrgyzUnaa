@@ -4,10 +4,9 @@
 
 /* Body */
 
+
 body{
-    font-family: 'Brygada 1918', serif !important;
-}
-body{
+     font-family: 'Brygada 1918', serif !important;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,6 +16,34 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+
+
+
+
+
+/* NAV */
+
+
+
+
+
+header{
+    position: relative;
+    z-index: 10;
+}
+header nav{
+    position: absolute !important;
+    width: 100% !important;
+    background-color: rgba(0,0,0,0);
+}
+
+header nav li a{
+    color: #fff !important;
+}
+
+
+
 
 .active{    
   
@@ -33,9 +60,6 @@ html{
 nav ol{
     padding-top: 5px;
 }
-
-
-/* NAV */
 
 .navbar-brand img{
     animation: rotate 5s linear infinite;
@@ -57,7 +81,7 @@ nav a{
 
 
 .containerFluid{
-    width: 82% !important;
+    width: 85% !important;
     margin: 0 auto;
     display: flex;
 }
@@ -67,17 +91,8 @@ nav a{
 .dropdown-item{
     padding:7px !important ;
 }
-.icons{
-    display: flex;
-    list-style: none;
-}
-.icons li{
-    margin: 0 10px !important;
-    font-size: 25px;
-}
 
 
-/* MAIN */
 .dropdown-menu{
     background: none !important;
     border:0 !important;
@@ -86,6 +101,15 @@ nav a{
   .dropdown-item:hover{
     background: none !important;
   }
+
+
+
+
+/* Задний фон старик */
+
+
+
+
 .sertBanner{
     background: url("/img/Новая папка/sertB.jpg") center / cover;
     width: 100%;
@@ -102,7 +126,11 @@ nav a{
     background-color: rgba(0,0,0,.4);
 }
 .textS{
-    padding-top: 150px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.textS h1{
     color: white;
     position: relative;
     padding-left: 80px;
@@ -111,6 +139,14 @@ nav a{
     font-size: 75px ;
 
 }
+
+
+
+/* 
+    БЛОКИ  СЕРТИФИКАТЫ И ТЕКСТА
+*/
+
+
 
 
 .paperBlock{
@@ -148,10 +184,27 @@ nav a{
 
 
 
+
+
+
 /* 
     FOOOTER
 
 */
+
+
+
+
+
+
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
 
 footer{
     margin: 100px 0;

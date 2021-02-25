@@ -1,17 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap');
 
 
 /* Body */
 
 body{
-    font-family: 'Montserrat', serif !important;
-}
-body{
+    font-family: 'Brygada 1918', serif !important;
     margin: 0;
     padding: 0;
     width: 100%;
   
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+/* НАВИГАЦИЯ */
+
+
+
+
+
+
+.actives{    
+  
+    color: gold !important;
+}
+.nav-link{
+    text-decoration: none;
+    position:relative;
+}
+.nav-link:hover{
+    transition-duration: 0.3s;
+    color: gold !important;
+}
+
+
+
+
 .dropdown-menu{
     background: none !important;
     border:0 !important;
@@ -32,25 +63,6 @@ body{
     padding:7px !important;
 
   }
-html{
-    scroll-behavior: smooth;
-}
-
-.actives{    
-  
-    color: gold !important;
-}
-.nav-link{
-    text-decoration: none;
-    position:relative;
-}
-.nav-link:hover{
-    transition-duration: 0.3s;
-    color: gold !important;
-}
-
-
-/* NAV */
 
 .navbar-brand img{
     animation: rotate 5s linear infinite;
@@ -69,6 +81,14 @@ html{
 nav a{
     color: grey;
 }
+
+
+
+/* 
+
+        НОВОСТИ
+
+*/
 
 
 
@@ -97,6 +117,17 @@ nav a{
     margin-top: 50px;
 }
 
+
+
+
+
+/*ФУУТЕР */
+
+
+
+
+
+
 footer{
     margin: 100px 0;
 }
@@ -106,6 +137,14 @@ footer{
     margin: 0 auto;
 }
 
+.icons{
+    display: flex;
+    list-style: none;
+}
+.icons li{
+    margin: 0 10px !important;
+    font-size: 25px;
+}
 .foot{
     display: flex;
     justify-content: center;
