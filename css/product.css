@@ -38,7 +38,7 @@ header nav li a{
 
 
 .actives{    
-  color: gold !important;
+  color: #03e9f4 !important;
 }
 .nav-link{
   text-decoration: none;
@@ -47,7 +47,7 @@ header nav li a{
 
 .nav-link:hover{
   transition-duration: 0.3s;
-  color: gold !important;
+  color:#03e9f4 !important;
 }
 
 
@@ -68,7 +68,7 @@ header nav li a{
 
 
 .navbar a{
-    color: white !important;
+    color: white ;
 }
 
 
@@ -97,6 +97,10 @@ header nav li a{
 .dropdown-item:hover{
   background: none !important;
 } 
+
+.navbar-dark .navbar-toggler{
+  border:0;
+}
 
 
 
@@ -130,7 +134,7 @@ header nav li a{
   align-items: center;
 }
 .banner .mai{
-  padding-left: 50px;
+  padding-left: 200px;
   color:white !important;
   position: relative;
   z-index:5 !important;
@@ -609,7 +613,7 @@ animation: icon 1.5s infinite forwards;
   align-items: center;
   margin-top: 150px;
   height: 100vh;
-}
+  }
 
 .contBack{
   background: url('/img/Новая папка/cont.jpg') left / cover;
@@ -627,8 +631,8 @@ animation: icon 1.5s infinite forwards;
   background-color: rgba(0,0,0,0.4);
 }
 .login-box {
-  width:60%;
-  height: 600px;
+  width:600px;
+  height: 450px;
   padding: 40px;
   position: relative;
   border-radius: 10px;
@@ -645,7 +649,7 @@ animation: icon 1.5s infinite forwards;
 }
 .login-box h2 {
   position: relative;
-  margin: 0 0 30px;
+  margin: 0px;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -660,7 +664,7 @@ animation: icon 1.5s infinite forwards;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom:15px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -671,7 +675,7 @@ animation: icon 1.5s infinite forwards;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom:15px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -706,7 +710,7 @@ animation: icon 1.5s infinite forwards;
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 40px;
+  margin-top: 5px;
   letter-spacing: 4px
 }
 
@@ -900,7 +904,7 @@ animation: icon 1.5s infinite forwards;
 
 
 footer{
-  margin: 50px 0;
+  margin-top: 100px;
 }
 
 .centerFooter{
@@ -913,7 +917,7 @@ footer{
   justify-content: center;
 }
 .foot ol{
-  margin: 0 25px;
+  margin: 0 0px;
   list-style: none;
 }
 .foot ol li a{
@@ -932,7 +936,7 @@ footer{
 }
 .polit{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .polit ol{
   display: flex;
@@ -954,16 +958,574 @@ footer{
   color: #03e9f4;
 }
 
+.polit .icons a:hover{
+  color:  #03e9f4;
+}
+.bolds{
+  font-weight: bolder !important;
+}
 
-.icons{
+.polit .icons{
   display: flex;
   list-style: none;
+  padding-left: 0;
 }
-.icons li{
+.polit .icons li{
   margin: 0 10px !important;
-  font-size: 25px;
+  font-size: 35px;
+}
+.polit .icons li a{
+  color: black;
+}
+
+.polit .osoo{
+  padding-top: 15px;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA ADAPTIVE */
+
+
+
+
+/* NAV */
+
+
+
+
+@media (max-width:1256px){
+    .navbar-nav .nav-item{
+        margin: 0 0px;
+    }
+    
+}
+
+
+@media (max-width:1199px){
+    .containerFluid{
+        width: 86% !important;
+        margin: 0 auto;
+        display: flex;
+    }
+    .navbar-nav .nav-item{
+        margin: 0 -2px;
+    }
+}
+
+
+
+
+@media (max-width:1110px){
+    .navbar-nav .nav-item{
+        margin: 0 1px;
+    }
+    .nav-link span{
+        display: none;
+    }
+}
+
+
+@media (max-width:1008px){
+    .navbar-nav .nav-item{
+        margin: 0 -2px;
+    }
+
+}
+
+@media (max-width:991px){
+    .containerFluid{
+        width: 100% !important;
+        margin: 0 auto;
+        display: flex ;
+    }
+}
+
+@media (max-width:320px){
+    .collapse{
+        background: rgba(0,0,0,.9);
+        padding: 25px;
+        transition: 0.5s;
+        width: 100%;
+    }
+    .collapse ol li a span{
+        display: block;
+    }
+    .collapse ol li .tel{
+        display: flex;
+    }
+
+    .navbar-dark .navbar-toggler{
+        border:none;
+    }
+}
+
+@media (max-width:991px){
+    .collapse{
+        background: rgba(0,0,0,.9);
+        padding: 25px;
+        transition: 0.5s;
+        width: 100%;
+    }
+    .collapse ol li a span{
+        display: block;
+    }
+    .collapse ol li .tel{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+/* BANNER */
+
+
+
+
+
+
+
+
+
+@media (max-width:624px){
+  .mai{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .mai{
+    padding-left: 0 !important;
+    color:white !important;
+    position: relative;
+    z-index:5 !important;
+  }
+  .bannerT h1{
+    font-size: 50px;
+  }
+}
+
+@media (max-width:320px){
+    .bannerT h1{
+      font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCTS */
+
+
+
+@media (max-width:793px){
+  .el-wrapper {
+    width:230px !important;
+    height: 400px;
+    padding: 15px;
+    box-shadow: 0 5px 20px gainsboro;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+
+@media (max-width:531px){
+  .productInline{
+    flex-direction: column;
+  }
+  .accordion-flush{
+    width: 480px;
+  }
+
+
+  .leftSide{
+    border-right:0px solid gainsboro;
+  width: 40% !important;
+  }
+
+  .contBack{
+    width: 100%;
+  }
+}
+
+.el-wrapper {
+  width:200px !important;
+  height: 400px;
+  padding: 15px;
+  box-shadow: 0 5px 20px gainsboro;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+@media (max-width:513px){
+  .accordion-flush{
+    width: 450px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:485px){
+  .accordion-flush{
+    width: 380px;
+  }
+
+  .inlineCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+
+  .menuInline{
+    padding-left: 0;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+  }
+  .menuInline li{
+    border:0.2px solid gainsboro;
+    
+  }
+
+  .menuCenter{
+    width:100%;
+    margin-top: 50px;
+  
+  }
+  .menuInline li:nth-child(1){
+    background-color: rgba(0,0,0,.9);
+    color: white !important;
+  }
+  .actDark a{
+    color: white !important;
+  }
+  .actDark{
+    background: none;
+  }
+}
+
+
+
+
+
+
+@media (max-width:471px){
+ 
+  .el-wrapper {
+    width: 400px !important;
+    padding: 15px;
+    box-shadow: 0 5px 20px gainsboro;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+
+@media (max-width:420px){
+  .el-wrapper {
+    width: 330px !important;
+    padding: 15px;
+    box-shadow: 0 5px 20px gainsboro;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width:395px){
+  .pagination li a {
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    width:30px;
+    font-size: 18px;
+    padding-top: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-right-width: 0px;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+  }
+}
+
+
+
+@media (max-width:374px)
+{ 
+  .containerss {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+  
+  }
+}
+
+
+@media (max-width:329px){
+  .containerss {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+  
+  }
+}
+
+
+
+
+@media (max-width:353px){
+  .el-wrapper {
+    width: 270px !important;
+    padding: 15px;
+    box-shadow: 0 5px 20px gainsboro;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+
+@media (max-width:410px){
+  .accordion-flush{
+    width: 350px;
+  }
+}
+
+
+
+
+
+
+@media (max-width:378px){
+  .accordion-flush{
+    width: 330px;
+  }
+}
+
+
+
+
+
+@media (max-width:356px){
+  .accordion-flush{
+    width: 300px;
+  }
+}
+
+
+
+@media (max-width:325px){
+  .accordion-flush{
+    width: 270px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOOTER */
+
+
+
+
+
+
+
+
+
+@media (max-width:868px){
+    .foot ol{
+        margin: 0 0px;
+        list-style: none;
+    }
+    
+}
+
+@media 
+(max-width:867px)
+{
+    footer{
+        background: rgba(0,0,0,.9);
+    }
+    .foot hr{
+        border:1px solid gray !important;
+    }
+    .foot{
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .foot ol li a{
+        color: gainsboro;
+    }
+    .foot ol li b{
+        color: #03e9f4;
+    }
+    .polit ul{
+        color: white;
+    }
+    .bolds{
+        color: #03e9f4 !important;
+    }
+    .icons{
+        display: flex;
+        list-style: none;
+    }
+    .icons li{
+        margin: 0 20px  !important;
+        font-size: 20px;
+  
+}
+}
+
+@media (max-width:398px){
+    .polit ul li{
+        color: white;
+        font-size: 15px;
+    }
+}

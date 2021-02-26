@@ -307,8 +307,7 @@ nav a{
     padding: 30px 100px !important;
 }
 .aboutUsMain .title h1{
-    font-size: 60px !important;
-    font-weight: bold;
+    font-size: 40px !important;
     margin-bottom: 1rem;
 }
 .aboutUsMain p{
@@ -521,10 +520,6 @@ nav a{
 
 
 
-
-
-
-
 /* Оборудование */
 
 
@@ -582,22 +577,6 @@ nav a{
     height: 100%;
     
 }
-.cards-body a{
-    margin: 20px 0 !important;
-    padding: 10px 20px;
-    color:black;
-    text-decoration: none;
-    background-color:  #03e9f4;
-    border-radius:10px;
-}
-.cards-body a:hover{
-    color: white;
-}
-.bt{
-    text-align: right;
-}
-
-
 
 
 
@@ -627,7 +606,7 @@ nav a{
 }
 
 .generalNew{
-    border-left: 5px solid red;
+    border-left: 5px solid #03e9f4;
     padding-left: 10px;
 }
 .generalNew a{
@@ -655,7 +634,7 @@ nav a{
     transition: 0.5s;
 }
 .cards:hover{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #03e9f4;
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -673,6 +652,25 @@ nav a{
 .cards-body p:nth-child(2){
     font-size: 20px;
 }
+.cards-body .bt{
+    margin-top: 30px;
+}
+.cards-body a{
+    margin: 20px 0 !important;
+    padding: 10px 20px;
+    color:black;
+    text-decoration: none;
+    background-color:  #03e9f4;
+    border-radius:10px;
+}
+.cards-body a:hover{
+    color: white;
+}
+.bt{
+    text-align: right;
+}
+
+
 
 
 
@@ -704,15 +702,7 @@ nav a{
     margin: 0 auto;
     margin-top: 100px;
 }
-.icons{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-}
-.icons li{
-    margin: 0 10px !important;
-    font-size: 20px;
-}
+
 
 .foot{
     display: flex;
@@ -737,7 +727,7 @@ nav a{
 }
 .polit{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .polit ol{
     display: flex;
@@ -755,16 +745,30 @@ nav a{
     color: black;
     text-decoration: none;
 }
-.polit a:hover{
+.polit .icons a:hover{
     color:  #03e9f4;
 }
 .bolds{
     font-weight: bolder !important;
 }
 
+.polit .icons{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.polit .icons li{
+    margin: 0 10px !important;
+    font-size: 35px;
+}
+.polit .icons li a{
+    color: black;
+}
 
-
-
+.polit .osoo{
+    padding-top: 15px;
+    
+}
 
 
 
@@ -911,7 +915,7 @@ nav a{
 }
 
 @media (max-width:991px){
-    .collapse{
+     .collapse{
         background: rgba(0,0,0,.9);
         padding: 25px;
         transition: 0.5s;
@@ -1081,15 +1085,25 @@ nav a{
 }
 @media (max-width:353px){
     .bannerText h1{
-        font-size:25px !important;
+        font-size:23px !important;
     }
     .firstComp h1{
-        font-size: 13px !important;
+        font-size: 20px !important;
+        width: 200px;
 
     }
     .firstComp{
         margin-left: 5px;
         padding-left: 2px;
+    }
+
+    .btns a{
+        color: white;
+        border:1px solid white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 15px;
+        transition: 0.5s;
     }
 }
 

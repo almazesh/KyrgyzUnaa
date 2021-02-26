@@ -35,35 +35,25 @@ window.addEventListener('load', () =>{
 
 
 // Parallax
-oneImg.addEventListener('mousemove', e =>{
-    console.log(e.screenX);
-    console.log(e.screenY);
-    oneImg.firstElementChild.style.transition = '0s';
-    oneImg.firstElementChild.style.transform = `translate(${e.screenY * 0.02}px, ${e.screenX * 0.02}px)`
-})
+// oneImg.addEventListener('mousemove', e =>{
+//     console.log(e.screenX);
+//     console.log(e.screenY);
+//     oneImg.firstElementChild.style.transition = '0s';
+//     oneImg.firstElementChild.style.transform = `translate(${e.screenY * 0.02}px, ${e.screenX * 0.02}px)`
+// })
 
-twoImg.addEventListener('mousemove', e =>{
-    console.log(e.screenX);
-    console.log(e.screenY);
-    twoImg.firstElementChild.style.transition = '0s';
-    twoImg.firstElementChild.style.transform = `translate(${e.screenY * 0.02}px, ${e.screenX * 0.02}px)`
-})
+// twoImg.addEventListener('mousemove', e =>{
+//     console.log(e.screenX);
+//     console.log(e.screenY);
+//     twoImg.firstElementChild.style.transition = '0s';
+//     twoImg.firstElementChild.style.transform = `translate(${e.screenY * 0.02}px, ${e.screenX * 0.02}px)`
+// })
 
-threeImg.addEventListener('mousemove', e =>{
-    console.log(e.screenX);
-    console.log(e.screenY);
-    threeImg.firstElementChild.style.transition = '0s';
-    threeImg.firstElementChild.style.transform = `translate(${e.screenY * 0.02}px, ${e.screenX * 0.02}px)`
-})
+// threeImg.addEventListener('mousemove', e =>{
+//     console.log(e.screenX);
+//     console.log(e.screenY);
+//     threeImg.firstElementChild.style.transition = '0s';
+//     threeImg.firstElementChild.style.transform = `translate(${e.screenY * 0.02}px, ${e.screenX * 0.02}px)`
+// })
 
 
-
-document.queryCommandState('.pole');
-var arr = []
-
-arr.length = 10;
-
-for(var i = 0;  i < arr.length;i++){
-    arr[i] = Math.floor(Math.random() * 200)
-}
-console.log(arr)

@@ -28,9 +28,21 @@ html{
 
 
 
+
+
+
+
+
 header{
     position: relative;
     z-index: 10;
+}
+nav ol{
+    padding-top:2px;
+}
+
+header{
+    position: relative;
 }
 header nav{
     position: absolute !important;
@@ -40,25 +52,6 @@ header nav{
 
 header nav li a{
     color: #fff !important;
-}
-
-
-
-
-.active{    
-  
-    color: gold !important;
-}
-.nav-link{
-    text-decoration: none;
-    position:relative;
-}
-.nav-link:hover{
-    transition-duration: 0.3s;
-    color: gold !important;
-}
-nav ol{
-    padding-top: 5px;
 }
 
 .navbar-brand img{
@@ -72,35 +65,53 @@ nav ol{
         transform: rotate(360deg);
     }
 }
+.actives{
+    color: #03e9f4 !important;
+}
+.dropdown-menu{
+    background: none !important;
+    border:0 !important;
 
-
-
-nav a{
-    color: white !important;
+}
+.dropdown-item:hover{
+background: none !important;
+}
+.dropdown-item{
+    padding:7px !important;
+}
+.navbar-nav .nav-item{
+    margin: 0 5px;
 }
 
+nav a{
+    color: grey;
+}
 
+.nav-link{
+    text-decoration: none;
+    position:relative;
+   
+}
+.nav-link:hover{
+
+    transition-duration: 0.3s;
+    color: #03e9f4 !important;
+}
 .containerFluid{
-    width: 85% !important;
+    width: 86% !important;
     margin: 0 auto;
     display: flex;
 }
 .navbar-nav .nav-item{
     margin: 0 5px;
 }
-.dropdown-item{
-    padding:7px !important ;
+
+.navbar-dark .navbar-toggler{
+    border:none;
 }
 
 
-.dropdown-menu{
-    background: none !important;
-    border:0 !important;
-  
-  }
-  .dropdown-item:hover{
-    background: none !important;
-  }
+
 
 
 
@@ -195,32 +206,18 @@ nav a{
 
 
 
-
-
-.icons{
-    display: flex;
-    list-style: none;
-}
-.icons li{
-    margin: 0 10px !important;
-    font-size: 25px;
-}
-
-footer{
-    margin: 100px 0;
-}
-
 .centerFooter{
     width: 95%;
     margin: 0 auto;
+    margin-top: 100px;
 }
+
 
 .foot{
     display: flex;
     justify-content: center;
 }
 .foot ol{
-    margin: 0 25px;
     list-style: none;
 }
 .foot ol li a{
@@ -229,7 +226,7 @@ footer{
     font-weight: 300;
 }
 .foot a:hover{
-    color: red;
+    color:  #03e9f4;
 }
 .foot ol li{
     margin: 10px 0;
@@ -239,7 +236,7 @@ footer{
 }
 .polit{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .polit ol{
     display: flex;
@@ -257,6 +254,195 @@ footer{
     color: black;
     text-decoration: none;
 }
-.polit a:hover{
-    color: red;
+.polit .icons a:hover{
+    color:  #03e9f4;
 }
+.bolds{
+    font-weight: bolder !important;
+}
+
+.polit .icons{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.polit .icons li{
+    margin: 0 10px !important;
+    font-size: 35px;
+}
+.polit .icons li a{
+    color: black;
+}
+
+.polit .osoo{
+    padding-top: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA ADAPTIVE */
+
+
+
+
+/* NAV */
+
+
+
+
+@media (max-width:1256px){
+    .navbar-nav .nav-item{
+        margin: 0 0px;
+    }
+    
+}
+
+
+@media (max-width:1199px){
+    .containerFluid{
+        width: 86% !important;
+        margin: 0 auto;
+        display: flex;
+    }
+    .navbar-nav .nav-item{
+        margin: 0 -2px;
+    }
+}
+
+
+
+
+@media (max-width:1110px){
+    .navbar-nav .nav-item{
+        margin: 0 1px;
+    }
+    .nav-link span{
+        display: none;
+    }
+}
+
+
+@media (max-width:1008px){
+    .navbar-nav .nav-item{
+        margin: 0 -2px;
+    }
+
+}
+
+@media (max-width:991px){
+    .containerFluid{
+        width: 100% !important;
+        margin: 0 auto;
+        display: flex ;
+    }
+}
+
+@media (max-width:320px){
+    .collapse{
+        background: rgba(0,0,0,.9);
+        padding: 25px;
+        transition: 0.5s;
+        width: 100%;
+    }
+    .collapse ol li a span{
+        display: block;
+    }
+    .collapse ol li .tel{
+        display: flex;
+    }
+
+    .navbar-dark .navbar-toggler{
+        border:none;
+    }
+}
+
+@media (max-width:991px){
+     .collapse{
+        background: rgba(0,0,0,.9);
+        padding: 25px;
+        transition: 0.5s;
+        width: 100%;
+    }
+    .collapse ol li a span{
+        display: block;
+    }
+    .collapse ol li .tel{
+        display: flex;
+    }
+}
+
+
