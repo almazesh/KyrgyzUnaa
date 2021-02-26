@@ -80,7 +80,7 @@ background: none !important;
     padding:7px !important;
 }
 .navbar-nav .nav-item{
-    margin: 0 5px;
+    margin: 0 0;
 }
 
 nav a{
@@ -103,7 +103,7 @@ nav a{
     display: flex;
 }
 .navbar-nav .nav-item{
-    margin: 0 5px;
+    margin: 0 0;
 }
 
 .navbar-dark .navbar-toggler{
@@ -116,13 +116,13 @@ nav a{
 
 
 
-/* Задний фон старик */
+/* Задний фон  */
 
 
 
 
 .sertBanner{
-    background: url("/img/Новая папка/sertB.jpg") center / cover;
+    background: url("/img/Новая папка/Сертификаты/sertificats.jpg") center / cover;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -145,11 +145,9 @@ nav a{
     color: white;
     position: relative;
     padding-left: 80px;
+    font-size: 75px;
 }
-.textS h1{
-    font-size: 75px ;
 
-}
 
 
 
@@ -171,6 +169,10 @@ nav a{
 }
 .secondInline{
     margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.threeInline{
     display: flex;
     justify-content: space-around;
 }
@@ -444,5 +446,246 @@ nav a{
         display: flex;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* BANNNER */
+
+
+@media (max-width:866px)
+{
+    .textS{
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textS h1{
+        color: white;
+        position: relative;
+        padding-left: 0px !important;
+        font-size: 75px;
+    }
+    
+    
+}
+
+
+@media (max-width:597px){
+    .textS h1{
+        color: white;
+        position: relative;
+        padding-left: 0px !important;
+        font-size: 50px;
+    }
+    
+}
+
+@media (max-width:406px){
+    .sertBanner{
+        height: 70vh;
+    }
+
+    .textS h1{
+        color: white;
+        position: relative;
+        padding-left: 0px !important;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SERTIFICATES */
+
+
+
+
+
+
+
+
+@media (max-width:1068px){
+    .firstInline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .left p{   
+        width: 100%; 
+    }
+    .left {
+        text-align: center;
+    }
+
+    .paperBlock{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .secondInline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .threeInline{
+        margin-top: 150px;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:681px){
+    .right img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOOTER */
+
+
+
+
+
+
+
+
+
+@media (max-width:868px){
+    .foot ol{
+        margin: 0 0px;
+        list-style: none;
+    }
+    
+}
+
+@media 
+(max-width:867px)
+{
+    footer{
+        background: rgba(0,0,0,.9);
+    }
+    .foot hr{
+        border:1px solid gray !important;
+    }
+    .foot{
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .foot ol li a{
+        color: gainsboro;
+    }
+    .foot ol li b{
+        color: #03e9f4;
+    }
+    .polit ul{
+        color: white;
+    }
+    .bolds{
+        color: #03e9f4 !important;
+    }
+    .icons{
+        display: flex;
+        list-style: none;
+    }
+    .icons li{
+        margin: 0 20px  !important;
+        font-size: 20px;
+  
+}
+.polit .icons li a{
+    color: white;
+  }
+  .polit .icons li a:hover{
+    color: #03e9f4;
+  }
+  
+}
+
+@media (max-width:398px){
+    .polit ul li{
+        color: white;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:610px)
+{
+  .polit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 

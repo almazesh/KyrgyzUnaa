@@ -22,9 +22,22 @@ html{
 
 /* NAV */
 
+
+
+
+
+
+
 header{
   position: relative;
   z-index: 10;
+}
+nav ol{
+  padding-top:2px;
+}
+
+header{
+  position: relative;
 }
 header nav{
   position: absolute !important;
@@ -36,73 +49,61 @@ header nav li a{
   color: #fff !important;
 }
 
-
-.actives{    
-  color: #03e9f4 !important;
-}
-.nav-link{
-  text-decoration: none;
-  position:relative;
-}
-
-.nav-link:hover{
-  transition-duration: 0.3s;
-  color:#03e9f4 !important;
-}
-
-
-
-
 .navbar-brand img{
-    animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 @keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
 }
-
-
-
-.navbar a{
-    color: white ;
+.actives{
+  color: #03e9f4 !important;
 }
-
-
-.containerFluid{
-    width: 82% !important;
-    margin: auto;
-    display: flex;
-}
-.navbar-nav .nav-item{
-    margin: 0 0px;
-}
-.dropdown-menu{
-  width: 0% !important;
-}
-.dropdown-item{
-  width:0% !important;
-  padding: 7px !important;
-}
-
-
 .dropdown-menu{
   background: none !important;
   border:0 !important;
 
 }
 .dropdown-item:hover{
-  background: none !important;
-} 
-
-.navbar-dark .navbar-toggler{
-  border:0;
+background: none !important;
+}
+.dropdown-item{
+  padding:7px !important;
+}
+.navbar-nav .nav-item{
+  margin: 0 5px;
 }
 
+nav a{
+  color: grey;
+}
 
+.nav-link{
+  text-decoration: none;
+  position:relative;
+ 
+}
+.nav-link:hover{
+
+  transition-duration: 0.3s;
+  color: #03e9f4 !important;
+}
+.containerFluid{
+  width: 86% !important;
+  margin: 0 auto;
+  display: flex;
+}
+.navbar-nav .nav-item{
+  margin: 0 5px;
+}
+
+.navbar-dark .navbar-toggler{
+  border:none;
+}
 
 
 
@@ -114,7 +115,7 @@ header nav li a{
 
  
 .banner{
-  background: url('/img/Новая папка/pro.jpg') center / cover;
+  background: url('/img/Новая папка/Продукции/product.jpg') center / cover;
   width: 100%;
   position: relative;
 
@@ -616,7 +617,7 @@ animation: icon 1.5s infinite forwards;
   }
 
 .contBack{
-  background: url('/img/Новая папка/cont.jpg') left / cover;
+  background: url('/img/Новая папка/Продукции/porductAuth.jpg') left / cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -1521,7 +1522,29 @@ footer{
         font-size: 20px;
   
 }
+.polit .icons li a{
+  color: white;
 }
+.polit .icons li a:hover{
+  color: #03e9f4;
+}
+
+}
+
+
+@media (max-width:610px)
+{
+  .polit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
 
 @media (max-width:398px){
     .polit ul li{

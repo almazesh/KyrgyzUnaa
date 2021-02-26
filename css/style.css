@@ -86,9 +86,7 @@ background: none !important;
 .dropdown-item{
     padding:7px !important;
 }
-.navbar-nav .nav-item{
-    margin: 0 5px;
-}
+
 
 nav a{
     color: grey;
@@ -110,7 +108,7 @@ nav a{
     display: flex;
 }
 .navbar-nav .nav-item{
-    margin: 0 5px;
+    margin: 0 0;
 }
 
 .navbar-dark .navbar-toggler{
@@ -137,7 +135,7 @@ nav a{
 
 .GeneralBanner{
     overflow: hidden !important;
-    background: url('../img/Новая папка/ab-min.jpg') center / cover ;
+    background: url('../img/Новая папка/Главная/ab-min.jpg') center / cover ;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -264,7 +262,7 @@ nav a{
     padding: 4rem 0;
     color: #fff;
     position: relative;
-    background: url('../img/about-main.jpg') center / cover fixed;
+    background: url('../img/Новая папка/Главная/fourBlock.jpg') center / cover fixed;
     transition: 1s;
 }
 .abinline{
@@ -368,7 +366,7 @@ nav a{
     width: 100%;
 }
 .oneImg{
-    background: url('/img/Новая папка/christopher-burns-8KfCR12oeUM-unsplash.jpg') center / cover;
+    background: url('/img/Новая папка/Главная/OneBlock.jpg') center / cover;
     transition: 1s;
     width: 100%;
     height: 500px !important;
@@ -431,7 +429,7 @@ nav a{
     width: 50%;
 }
 .twoImg{
-    background: url('/img/Новая папка/newss.jpg') center / cover;
+    background: url('/img/Новая папка/Главная/TwoBlock.jpg') center / cover;
     width: 100%;
     height: 500px !important;
     display: flex;
@@ -474,7 +472,7 @@ nav a{
     width: 50%;
 }
 .threeImg{
-    background: url('/img/Новая папка/jose-pinto-fXllai8Px5I-unsplash.jpg') center / cover;
+    background: url('/img/Новая папка/Главная/ThreeBlock.jpg') center / cover;
     width: 100%;
     height: 500px !important;
     display: flex;
@@ -1423,6 +1421,13 @@ nav a{
         font-size: 20px;
   
 }
+.polit .icons li a{
+    color: white;
+  }
+  .polit .icons li a:hover{
+    color: #03e9f4;
+  }
+  
 }
 
 @media (max-width:398px){
@@ -1431,3 +1436,17 @@ nav a{
         font-size: 15px;
     }
 }
+
+
+@media (max-width:610px)
+{
+  .polit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+

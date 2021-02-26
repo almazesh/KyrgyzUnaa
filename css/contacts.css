@@ -81,7 +81,7 @@ background: none !important;
   padding:7px !important;
 }
 .navbar-nav .nav-item{
-  margin: 0 5px;
+  margin: 0 0;
 }
 
 nav a{
@@ -103,9 +103,7 @@ nav a{
   margin: 0 auto;
   display: flex;
 }
-.navbar-nav .nav-item{
-  margin: 0 5px;
-}
+
 
 .navbar-dark .navbar-toggler{
   border:none;
@@ -127,7 +125,7 @@ nav a{
 
 
   .bannerContacts{
-    background: url('/img/Новая папка/contacts.jpg') top / cover;
+    background: url('/img/Новая папка/Контакты/contacts.jpg') top / cover;
     width: 100%;
     position: relative;
     height: 100vh;
@@ -216,6 +214,21 @@ nav a{
     transition: 0.5s;
     border-radius: 10px;
   }
+  .inlineContacts .cards  .fa-phone{
+    color: gold;
+  }
+  .inlineContacts .cards  .fa-car{
+    color: red;
+  }
+  .inlineContacts .cards  .fa-money-bill-alt{
+    color: green;
+  }
+  .inlineContacts .cards  .fa-hand-holding-usd{
+    color: purple;
+  }
+  .inlineContacts .cards  .fa-wrench{
+    color: orange;
+  }
   .inlineContacts .cards:hover{
     background-color: rgba(0,0,0,0.8);
     transition: 0.5s;
@@ -255,213 +268,6 @@ nav a{
 
 
 
-/* АВТОРИЗАЦИЯ */
-
-
-
-
-
-
-
-.containers {
-    display: flex;
-    height: 80vh;
-    margin-top: 100px;
-  }
-  .hidd{
-    overflow: hidden;
-
-  }
-  .center{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    height: 100vh;
-  }
-
-  .contBack{
-    background: url('/img/Новая папка/connect.jpg') left / cover;
-    width: 100%;
-    height: 100vh;
-  }
-  .login-box {
-    width:60%;
-    height: 600px;
-    padding: 40px;
-    position: relative;
-    border-radius: 10px;
-  }
-  .login-box::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 10px;  
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,.5);
-  }
-  .login-box h2 {
-    position: relative;
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .login-box .user-box {
-    position: relative;
-  }
-  
-  .login-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-  .login-box .user-box textarea {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-  .login-box .user-box label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-  }
- 
-  
-  .login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-  }
-  
-  .login-box a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .login-box a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
-  }
-  
 
 
 
@@ -507,6 +313,240 @@ nav a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* АВТОРИЗАЦИЯ */
+
+
+
+
+
+
+.center{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  height: 100vh;
+  }
+
+.contBack{
+  background: url('/img/Новая папка/Продукции/porductAuth.jpg') left / cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.contBack::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.login-box {
+  width:600px;
+  height: 450px;
+  padding: 40px;
+  position: relative;
+  border-radius: 10px;
+}
+.login-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.login-box h2 {
+  position: relative;
+  margin: 0px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom:15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom:15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 5px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
     FOOOTER
 
@@ -525,7 +565,7 @@ nav a{
   margin: 0 auto;
   margin-top: 100px;
 }
-
+  
 
 .foot{
   display: flex;
@@ -764,5 +804,408 @@ nav a{
 
 
 
+
+
+
+
+
+/* BANNNNER */
+
+
+
+@media (max-width:1050px)
+{
+
+.bannerText {
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+.child{  
+  color: white;
+  border:1px solid white;
+  width: 350px;
+  padding: 10px;
+  margin-left: -2px;
+  transition: 0.3s;
+}
+.bannerText h1{
+  position: relative;
+
+}
+.bannerText a{
+  color: inherit;
+  font-size: 30px;
+  text-decoration: none;
+}
+}
+
+
+@media (max-width:921px){
+  .child{  
+    color: white;
+    border:1px solid white;
+    width: 350px;
+    padding: 10px;
+    margin-left: -2px;
+    transition: 0.3s;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:390px)
+{
+  .bannerText{
+    justify-content: center;
+    align-items: center;
+  }
+  .child{  
+    color: white;
+    border:0;
+    transition: 0.3s;
+    margin-top: 200px;
+  }
+
+  .bannerText a{
+    color: inherit;
+    font-size:20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border:1px solid white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONNECT WITH CENTER */
+
+@media (max-width:858px){
+  .diller{
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 5 шт карточек */
+
+
+
+@media (max-width:1145px){
+  .inlineContacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .inlineContacts .cards{
+    margin: 10px 15px;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+
+  .cards{
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+
+@media (max-width:1074px){
+  .cards{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+
+
+@media (max-width:824px){
+  .cards{
+    width: 270px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+
+
+@media (max-width:750px){
+  .cards{
+    width: 240px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+@media (max-width:674px){
+  .cards{
+    width: 210px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+@media (max-width:599px){
+  .cards{
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+
+@media (max-width:438px){
+  .cards{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+
+@media (max-width:332px){
+  .cards{
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 5px 20px gainsboro;
+    text-align: center;
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAPS and ADRES  */
+
+
+
+@media (max-width:1145px){
+  .mapsInline{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  iframe{
+    width:800px;
+  }
+
+
+  .mapsCenter{
+    width: 80%;
+    margin:  auto;
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+@media (max-width:1000px){
+  iframe{
+    width:600px;
+  }
+ 
+}
+
+
+
+@media (max-width:674px){
+  iframe{
+    width:500px;
+  }
+}
+
+@media (max-width:599px){
+  iframe{
+    width:400px;
+  }
+}
+
+
+@media (max-width:438px){
+  iframe{
+    width:300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOOTER */
+
+
+
+
+
+
+
+
+
+@media (max-width:868px){
+  .foot ol{
+      margin: 0 0px;
+      list-style: none;
+  }
+  
+}
+
+@media 
+(max-width:867px)
+{
+  footer{
+      background: rgba(0,0,0,.9);
+  }
+  .foot hr{
+      border:1px solid gray !important;
+  }
+  .foot{
+      padding-top: 30px;
+      flex-direction: column;
+  }
+  .foot ol li a{
+      color: gainsboro;
+  }
+  .foot ol li b{
+      color: #03e9f4;
+  }
+  .polit ul{
+      color: white;
+  }
+  .bolds{
+      color: #03e9f4 !important;
+  }
+  .icons{
+      display: flex;
+      list-style: none;
+  }
+  .icons li{
+      margin: 0 20px  !important;
+      font-size: 20px;
+
+}
+.polit .icons li a{
+  color: white;
+}
+.polit .icons li a:hover{
+  color: #03e9f4;
+}
+
+}
+
+
+@media (max-width:610px)
+{
+  .polit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+@media (max-width:398px){
+  .polit ul li{
+      color: white;
+      font-size: 15px;
+  }
+}
 
 
