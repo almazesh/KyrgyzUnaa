@@ -26,43 +26,20 @@ html{
 
 
 
-
-.actives{    
-  
-    color: gold !important;
-}
-.nav-link{
-    text-decoration: none;
-    position:relative;
-}
-.nav-link:hover{
-    transition-duration: 0.3s;
-    color: gold !important;
+nav ol{
+    padding-top:2px;
 }
 
 
+header nav{
 
+    width: 100% !important;
+    background-color: rgba(0,0,0,0);
+}
 
-.dropdown-menu{
-    background: none !important;
-    border:0 !important;
-  
-  }
-  .containerFluid{
-      width: 82% !important;
-      margin: auto;
-      
-  }
-  .navbar-nav .navbar-item{
-      margin: 0 5px;
-  }
-  .dropdown-item:hover{
-    background: none !important;
-  }
-  .dropdown-item{
-    padding:7px !important;
-
-  }
+header nav li a{
+    color: grey !important;
+}
 
 .navbar-brand img{
     animation: rotate 5s linear infinite;
@@ -75,11 +52,46 @@ html{
         transform: rotate(360deg);
     }
 }
+.actives{
+    color: #03e9f4 !important;
+}
+.dropdown-menu{
+    background: none !important;
+    border:0 !important;
 
+}
+.dropdown-item:hover{
+background: none !important;
+}
+.dropdown-item{
+    padding:7px !important;
+}
 
 
 nav a{
     color: grey;
+}
+
+.nav-link{
+    text-decoration: none;
+   
+}
+.nav-link:hover{
+
+    transition-duration: 0.3s;
+    color: #03e9f4 !important;
+}
+.containerFluid{
+    width: 86% !important;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar-nav .nav-item{
+    margin: 0 0;
+}
+
+.navbar-dark .navbar-toggler{
+    border:none;
 }
 
 
@@ -95,22 +107,18 @@ nav a{
 .centerNew{
     width: 90%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
-.inline{
-    display: flex;
-    justify-content: center;
-}
+
 .inline div{
     margin:0 30px;
 }
 .inline .leftImg img{
+    float: left;
     width: 650px;
-    border-radius: 20px;
+    margin:20px;
 }
-.p{
-    padding: 20px 25px;
-}
+
 
 .int{
     text-align: center;
@@ -121,36 +129,30 @@ nav a{
 
 
 
-/*ФУУТЕР */
+/* 
+    FOOOTER
+
+*/
 
 
 
 
 
 
-footer{
-    margin: 100px 0;
-}
+
 
 .centerFooter{
     width: 95%;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
-.icons{
-    display: flex;
-    list-style: none;
-}
-.icons li{
-    margin: 0 10px !important;
-    font-size: 25px;
-}
+
 .foot{
     display: flex;
     justify-content: center;
 }
 .foot ol{
-    margin: 0 25px;
     list-style: none;
 }
 .foot ol li a{
@@ -159,7 +161,7 @@ footer{
     font-weight: 300;
 }
 .foot a:hover{
-    color: red;
+    color:  #03e9f4;
 }
 .foot ol li{
     margin: 10px 0;
@@ -169,7 +171,7 @@ footer{
 }
 .polit{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .polit ol{
     display: flex;
@@ -187,6 +189,230 @@ footer{
     color: black;
     text-decoration: none;
 }
-.polit a:hover{
-    color: red;
+.polit .icons a:hover{
+    color:  #03e9f4;
 }
+.bolds{
+    font-weight: bolder !important;
+}
+
+.polit .icons{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.polit .icons li{
+    margin: 0 10px !important;
+    font-size: 35px;
+}
+.polit .icons li a{
+    color: black;
+}
+
+.polit .osoo{
+    padding-top: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ADAPTIVE */
+
+
+@media (max-width:1195px){
+    .centerNew{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .inline{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inline div{
+        margin:0 30px;
+    }
+    .inline .leftImg img{
+        width:100%;
+        margin:20px;
+    }
+    
+    
+    .int{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:819px){
+    .centerNew{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .inline div{
+        margin:0 0px;
+    }
+    .inline .leftImg img{
+        width:100%;
+        margin:0px;
+    }
+    
+    
+    .int{
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOOTER */
+
+
+
+
+
+
+
+
+
+@media (max-width:868px){
+    .foot ol{
+        margin: 0 0px;
+        list-style: none;
+    }
+    
+}
+
+@media 
+(max-width:867px)
+{
+    footer{
+        background: rgba(0,0,0,.9);
+    }
+    .foot hr{
+        border:1px solid gray !important;
+    }
+    .foot{
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .foot ol li a{
+        color: gainsboro;
+    }
+    .foot ol li b{
+        color: #03e9f4;
+    }
+    .polit ul{
+        color: white;
+    }
+    .bolds{
+        color: #03e9f4 !important;
+    }
+    .icons{
+        display: flex;
+        list-style: none;
+    }
+    .icons li{
+        margin: 0 20px  !important;
+        font-size: 20px;
+  
+}
+.polit .icons li a{
+    color: white;
+  }
+  .polit .icons li a:hover{
+    color: #03e9f4;
+  }
+  
+}
+
+@media (max-width:398px){
+    .polit ul li{
+        color: white;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:610px)
+{
+  .polit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
