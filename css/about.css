@@ -620,6 +620,73 @@ nav a{
 /* NAV */
 
 
+@media (max-width:1636px){
+    .navbar-nav .nav-item{
+        margin: 0 0px !important;
+    }
+    .nav-item{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:1532px){
+    .nav-item{
+        font-size: 20px !important;
+    }
+}
+
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 100% !important;
+    }
+    .nav-item{
+        font-size: 16px !important;
+    }
+}
+    
+
+
+
+@media screen and  (max-width:2560px) {
+    .actives{
+        color:#03e9f4 !important;
+    }
+    .containerFluid{
+        width: 86% !important;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar-nav .nav-item{
+        margin: 0 5px;
+        font-size: 20px !important;
+    }
+
+}
+
+
+
+@media (max-width:1401px){
+    .navbar-nav .nav-item{
+        margin: 0 5px;
+        font-size: 16px !important;
+    }
+
+}
+
+@media (max-width:1199px){
+    .containerFluid{
+        width: 86% !important;
+        margin: 0 auto;
+        display: flex;
+    }
+    .navbar-nav .nav-item{
+        margin: 0 -2px;
+        font-size: 15px !important;
+    }
+}
 
 
 @media (max-width:1256px){
@@ -956,8 +1023,6 @@ nav a{
 
 
 
-
-
 /*
 
 
@@ -967,7 +1032,30 @@ MISSION
 
  */
 
+@media (max-width:1814px){
+    .centerMission{
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
 
+@media (max-width:1639px){
+    .centerMission{
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width:1410px){
+    .centerMission{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
 
  @media (max-width:1173px){
     .centerMission{

@@ -845,23 +845,71 @@ nav a{
 
 
 
-
-@media (max-width:1256px){
-    .navbar-nav .nav-item{
-        margin: 0 0px;
+    @media (max-width:1636px){
+        .navbar-nav .nav-item{
+            margin: 0 0px !important;
+        }
+        .nav-item{
+            font-size: 20px;
+        }
     }
-    
-}
 
 
-@media (max-width:1199px){
-    .containerFluid{
-        width: 86% !important;
-        margin: 0 auto;
-        display: flex;
+    @media (max-width:1532px){
+        .nav-item{
+            font-size: 20px !important;
+        }
     }
-    .navbar-nav .nav-item{
-        margin: 0 -2px;
+
+
+    @media (min-width: 1400px){
+        .container{
+            max-width: 100% !important;
+        }
+        .nav-item{
+            font-size: 16px !important;
+        }
+    }
+        
+
+
+
+    @media screen and  (max-width:2560px) {
+        .actives{
+            color:#03e9f4 !important;
+        }
+        .containerFluid{
+            width: 86% !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar-nav .nav-item{
+            margin: 0 5px;
+            font-size: 20px !important;
+        }
+
+    }
+
+
+
+    @media (max-width:1401px){
+        .navbar-nav .nav-item{
+            margin: 0 5px;
+            font-size: 16px !important;
+        }
+
+    }
+
+    @media (max-width:1199px){
+        .containerFluid{
+            width: 86% !important;
+            margin: 0 auto;
+            display: flex;
+        }
+        .navbar-nav .nav-item{
+            margin: 0 -2px;
+            font-size: 15px !important;
     }
 }
 
@@ -932,14 +980,66 @@ nav a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* BANNER */
 
 
 
+@media screen and  (max-width:2560px) {
+    .bannerCenterContent{
+        width: 80%;
+        z-index: 4;
+        position: relative;
+        margin:  auto;
+        height: 80%;
+        display: flex ;
+        align-items:center; 
+
+    }   
+}
 
 
 
+@media (max-width:1451px){
+    .bannerCenterContent{
+        width: 90%;
+        z-index: 4;
+        position: relative;
+        margin:  auto;
+        height: 80%;
+        display: flex ;
+        align-items:center; 
 
+    }   
+}
+
+
+@media (max-width:1289px){
+    .bannerCenterContent{
+        width: 95%;
+        z-index: 4;
+        position: relative;
+        margin:  auto;
+        height: 80%;
+        display: flex ;
+        align-items:center; 
+
+    }   
+    .bannerText h1{
+        font-size: 40px !important;
+    }
+}
 
 
 @media (max-width:1222px){
@@ -1340,9 +1440,37 @@ nav a{
 
 /* NOVOSTI */
 
+@media (max-width:1511px)
+{
+    .cards{
+        box-shadow: 0 5px 20px gainsboro;
+        width:400px !important;
+        height: 550px;
+        position: relative;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width:1733px){
+    .cards{
+        box-shadow: 0 5px 20px gainsboro;
+        width: 300px;
+        height: 550px;
+        position: relative;
+        transition: 0.5s;
+    }
+}
 
 
-
+@media (max-width:977px){
+    .cards{
+        box-shadow: 0 5px 20px gainsboro;
+        width: 300px !important;
+        height: 550px;
+        position: relative;
+        transition: 0.5s;
+    }
+}
 
 
 @media (max-width:762px)
@@ -1392,9 +1520,28 @@ nav a{
 
 
 
+@media (max-width:1762px){
+    .foot ol{
+        margin: 0 40px;
+        list-style: none;
+    }
+}
 
 
 
+@media (max-width:1240px){
+    .foot ol{
+        margin: 0 20px;
+        list-style: none;
+    }
+}
+
+@media (max-width:1000px){
+    .foot ol{
+        margin: 0 0px;
+        list-style: none;
+    }
+}
 
 @media (max-width:868px){
     .foot ol{

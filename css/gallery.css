@@ -610,6 +610,32 @@ nav a{
 
 
 /* Карусель */
+
+
+
+
+@media (max-width:1861px){
+
+.backs{
+    background: url('/img/Новая папка/Новости/news.jpg') center / cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+}
+
+.back3{
+    background: url('/img/Новая папка/Новости/office.jpg') center / cover;
+    width: 100%;
+    height:50vh;
+    position: relative;
+    text-align: center;
+}
+}
+
+
+
+
 @media (max-width:711px){
     .backs h1{
         font-size: 50px !important;

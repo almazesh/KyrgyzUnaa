@@ -811,7 +811,15 @@ nav a{
 
 /* BANNNNER */
 
-
+@media (max-width:1762px){
+  .bannerContacts{
+    background: url('/img/Новая папка/Контакты/contacts.jpg') top / cover;
+    width: 100%;
+    position: relative;
+    height: 130vh;
+  }
+ 
+}
 
 @media (max-width:1050px)
 {

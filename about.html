@@ -107,7 +107,7 @@
         <div class="onasCenter">
             <div class="textO">
                 <h1><span >O</span> НАС</h1>
-                <p class="TextWithDate">Кыргыз Унаа Курулуш  <span class="date"></span></p>
+                <p class="TextWithDate">Кыргыз Унаа Курулуш  </p>
                 <div class="text">
                     <p>
                         «КЫРГЫЗ УНАА КУРУЛУШ» - промышленное предприятие в г.Ош, проектирующее и производящее энергетическое и машиностроительное оборудование любой сложности.
@@ -431,7 +431,7 @@
             <div class="polit">
                 <ul class="osoo">
                     <li>
-                        ОсОО Кыргыз Унаа Курулуш © 2021
+                        ОсОО Кыргыз Унаа Курулуш © <i><span class="date"></span></i>
                     </li>
                 </ul>
                 <ul class="icons">
@@ -475,11 +475,9 @@
         let dates = document.querySelector('.date');
 
         var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0'); 
         var yyyy = today.getFullYear();
 
-        today = mm + ' - ' + dd + ' - ' + yyyy;
+        today = yyyy;
         dates.innerHTML = today;
       </script>
   </body>
